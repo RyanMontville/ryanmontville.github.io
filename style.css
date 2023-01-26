@@ -167,4 +167,7 @@ main hr {
     header nav {
         gap: 10px;
     }
+    .link-desc {
+        display: none;
+    }
   }
