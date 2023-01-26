@@ -14,6 +14,7 @@ body {
 header {
     background-color: var(--red);
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
@@ -73,3 +74,16 @@ main hr {
 .gallery img {
     width: 17%;
 }
+
+@media only screen and (max-width: 630px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header h1 {
+        text-align: center;
+    }
+    header nav {
+        gap: 10px;
+    }
+  }
