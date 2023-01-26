@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,36 +9,73 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
-	<script src="https://kit.fontawesome.com/52202eaccb.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/52202eaccb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
+
 <body>
     <header>
-        <div>
-            <h1>Ryan Montville</h1>
-            <nav>
-                <a href="https://www.github.com/RyanMontville" title="GitHub" target="blank"><i class="fa-brands fa-github"></i>/RyanMontville</a>
-				<a href="https://www.linkedin.com/in/ryanmontville" title="LinkedIn" target="blank"><i class="fa-brands fa-linkedin-in"></i>/RyanMontville</a>
-            </nav>
-        </div>
-        
-    <img src="images/main.png"/>
+        <section class="header-wrapper">
+            <div>
+                <h1>Ryan Montville</h1>
+                <nav>
+                    <a href="https://www.github.com/RyanMontville" title="GitHub" target="blank"><i
+                            class="fa-brands fa-github"></i>/RyanMontville</a>
+                    <a href="https://www.linkedin.com/in/ryanmontville" title="LinkedIn" target="blank"><i
+                            class="fa-brands fa-linkedin-in"></i>/RyanMontville</a>
+
+
+                    <div class="theme-switch-wrapper">
+                        <input
+                            type="checkbox"
+                            class="checkbox"
+                            id="checkbox"
+                        />
+                        <label for="checkbox" class="label theme-switch">
+                            <span class="material-symbols-outlined">dark_mode</span>
+                            <span class="material-symbols-outlined">light_mode</span>
+                            <div class='ball' />
+                        </label>
+                    </div>
+
+
+                </nav>
+            </div>
+
+            <img src="images/main.png" />
+        </section>
+
     </header>
     <main>
         <h2>Bee Inspection App</h2>
-        <p>My parents are bee keepers as a hobby. They wanted to start recording the state of the hives whenever they inspect the hive. I have created a web application that they can quickly and easily record the data using their phone. The purpose of recording the inspections is to try to find patterns and possibly use the data from last year to predict what will happen this year. The app uses Java, SQL, JSON, HTML, CSS, Javascript, React.js, and Bootstrap. <a href="https://github.com/RyanMontville/Bee-Inspection">View the project on Github</a>.</p>
+        <p>My parents are bee keepers as a hobby. They wanted to start recording the state of the hives whenever they
+            inspect the hive. I have created a web application that they can quickly and easily record the data using
+            their phone. The purpose of recording the inspections is to try to find patterns and possibly use the data
+            from last year to predict what will happen this year. The app uses Java, SQL, JSON, HTML, CSS, Javascript,
+            React.js, and Bootstrap. <a href="https://github.com/RyanMontville/Bee-Inspection">View the project on
+                Github</a>.</p>
         <section class="gallery">
-            <img src="https://raw.githubusercontent.com/RyanMontville/Bee-Inspection/main/screenshots/homepage.png" alt="homepag"/>
-            <img src="https://raw.githubusercontent.com/RyanMontville/Bee-Inspection/main/screenshots/new-inspection_recoding-frames.png" alt="Recording the frames for a new inspection" />
-            <img src="https://raw.githubusercontent.com/RyanMontville/Bee-Inspection/main/screenshots/new-inpsection_recoding-overall.png" alt="Recording the overall observations in a new inspection" />
-            <img src="https://raw.githubusercontent.com/RyanMontville/Bee-Inspection/main/screenshots/viewing-a-past-inspection.png" alt="Viewing a past inspection" />
-            <img src="https://raw.githubusercontent.com/RyanMontville/Bee-Inspection/main/screenshots/search-page.png" alt="Search page" />
+            <img src="https://raw.githubusercontent.com/RyanMontville/Bee-Inspection/main/screenshots/homepage.png"
+                alt="homepag" />
+            <img src="https://raw.githubusercontent.com/RyanMontville/Bee-Inspection/main/screenshots/new-inspection_recoding-frames.png"
+                alt="Recording the frames for a new inspection" />
+            <img src="https://raw.githubusercontent.com/RyanMontville/Bee-Inspection/main/screenshots/new-inpsection_recoding-overall.png"
+                alt="Recording the overall observations in a new inspection" />
+            <img src="https://raw.githubusercontent.com/RyanMontville/Bee-Inspection/main/screenshots/viewing-a-past-inspection.png"
+                alt="Viewing a past inspection" />
+            <img src="https://raw.githubusercontent.com/RyanMontville/Bee-Inspection/main/screenshots/search-page.png"
+                alt="Search page" />
         </section>
         <hr />
         <h2>Philadelphia Brewery Guide</h2>
-        <p>For our final capstone at Tech Elevator,my team was tasked with creating a brewery finder web app for the city of Philadelphia. The app allowed users and brewery owners to create an account. The app has a SQL database that stores the user info, breweries, beer, and reviews. The front end runs on Vue.js framework, with a REST API to complete the MCV. <a href="https://github.com/RyanMontville/BreweryGuide">View the project on Github</a>.</p>
+        <p>For our final capstone at Tech Elevator,my team was tasked with creating a brewery finder web app for the
+            city of Philadelphia. The app allowed users and brewery owners to create an account. The app has a SQL
+            database that stores the user info, breweries, beer, and reviews. The front end runs on Vue.js framework,
+            with a REST API to complete the MCV. <a href="https://github.com/RyanMontville/BreweryGuide">View the
+                project on Github</a>.</p>
         <section class="gallery">
             <img src="images/User_Homepage.png" alt="user-homepage" />
-            <img src="images/Brewery_Detail_Page.png" alt="Viewing a brewery's page"/>
+            <img src="images/Brewery_Detail_Page.png" alt="Viewing a brewery's page" />
             <img src="images/Beer_Detail_Page.png" alt="Viewing the beer list for a brewery" />
             <img src="images/Create_Account_Form.png" alt="Creating an account" />
             <img src="images/Brewer_Homepage.png" alt="The homepage view for a brewery owner" />
@@ -47,21 +85,77 @@
         </section>
         <hr />
         <h2>War Card Game</h2>
-        <p>One of the first side projects I started working on during the Tech Elevator bootcamp was a CLI of the card game War. The application evolved as we were taught the different parts of full stack development. I knew I wanted to make a web interface for the game, so I created an API. After the bootcamp concluded, I wanted to learn React.js, so I used React to build the front end of the app. <a href="https://github.com/RyanMontville/War">View the project on Github</a>.</p>
+        <p>One of the first side projects I started working on during the Tech Elevator bootcamp was a CLI of the card
+            game War. The application evolved as we were taught the different parts of full stack development. I knew I
+            wanted to make a web interface for the game, so I created an API. After the bootcamp concluded, I wanted to
+            learn React.js, so I used React to build the front end of the app. <a
+                href="https://github.com/RyanMontville/War">View the project on Github</a>.</p>
         <section class="gallery">
-            <img src="https://raw.githubusercontent.com/RyanMontville/War/main/Screenshots/homepage.png" alt="Homepage"/>
-            <img src="https://raw.githubusercontent.com/RyanMontville/War/main/Screenshots/game.png" alt="Playing the game" />
-            <img src="https://raw.githubusercontent.com/RyanMontville/War/main/Screenshots/simulation.png" alt="Running the game as a simulation" />
-            <img src="https://raw.githubusercontent.com/RyanMontville/War/main/Screenshots/game-over.png" alt="Game Over screen" />
+            <img src="https://raw.githubusercontent.com/RyanMontville/War/main/Screenshots/homepage.png"
+                alt="Homepage" />
+            <img src="https://raw.githubusercontent.com/RyanMontville/War/main/Screenshots/game.png"
+                alt="Playing the game" />
+            <img src="https://raw.githubusercontent.com/RyanMontville/War/main/Screenshots/simulation.png"
+                alt="Running the game as a simulation" />
+            <img src="https://raw.githubusercontent.com/RyanMontville/War/main/Screenshots/game-over.png"
+                alt="Game Over screen" />
         </section>
         <hr />
         <h2>Hangman CLI</h2>
-        <p>Another one of my early side projects was the game hangman. It currently is just a CLI, but I plan on eventually turning it into a web app. The game runs on Java, and I have created an API in preparation of turning it into a web app. When a new game is started, a work is picked at random from the word bank, converts the word into an array list of underscores to represent each letter in the word and prints out an ascii gallows. The ascii output is stored in 7 arrays, one for each line of the ascii gallows. It asks the user to guess a letter. If the guess isn't in the word, it adds the guess to a list of wrong guesses and adds a body part to the proper gallows array and prints the gallows again. If the guess is correct, it replaces every underscore in the list were that letter should be. The game runs within a while loop, so that the user can play as many times as they want without having to resart the program. When a game ends, a reset method is called which resets the gallows, clears the list of underscores, picks a new word and random and starts the game over. <a href="https://github.com/RyanMontville/Hangman">View the project on GitHub</a>.</p>
+        <p>Another one of my early side projects was the game hangman. It currently is just a CLI, but I plan on
+            eventually turning it into a web app. The game runs on Java, and I have created an API in preparation of
+            turning it into a web app. When a new game is started, a work is picked at random from the word bank,
+            converts the word into an array list of underscores to represent each letter in the word and prints out an
+            ascii gallows. The ascii output is stored in 7 arrays, one for each line of the ascii gallows. It asks the
+            user to guess a letter. If the guess isn't in the word, it adds the guess to a list of wrong guesses and
+            adds a body part to the proper gallows array and prints the gallows again. If the guess is correct, it
+            replaces every underscore in the list were that letter should be. The game runs within a while loop, so that
+            the user can play as many times as they want without having to resart the program. When a game ends, a reset
+            method is called which resets the gallows, clears the list of underscores, picks a new word and random and
+            starts the game over. <a href="https://github.com/RyanMontville/Hangman">View the project on GitHub</a>.</p>
         <hr />
         <h2>Murphy's law - Submission for Ugly Website competition</h2>
-        <p>While I was enrolled in Tech Elevator, I competed in an ugly website competition against the other students. The purpose of the competition was to develop a better understanding of HTML and CSS and to get us to research and explore web design on our own outside of lecture. I took inspiration from the horrible ugly sites of the 90s. I tried to break every rule I could think of when it comes to designing a good website. I intentionally did not optimize the site for cross-browser or cross-device support so it might not display nicely on your screen. Every element has a CSS transform rotation of a few degrees so nothing is straight or lined up. The font-family, font-size, and color are not consistent across paragraphs. Every element changes the mouse cursor to a different pointer and none relate to the context the cursor is currently over. There are broken image links and pixelated images. Where modern websites use CSS to style most of the page, I tried to use as many .png images as possible to build the UI. I kept on adding more code and useless properties to every element.</p>
-        <p>One warning before you click on the link, the background is animated and might be hard to look at for too long, if you click on the STOP sign in the top left corner it will stop the background animation. If you are still interested in viewing it after reading everything wrong with it, <a href="MurphysLaw.html">Click Here</a>. (Good luck)</p>
+        <p>While I was enrolled in Tech Elevator, I competed in an ugly website competition against the other students.
+            The purpose of the competition was to develop a better understanding of HTML and CSS and to get us to
+            research and explore web design on our own outside of lecture. I took inspiration from the horrible ugly
+            sites of the 90s. I tried to break every rule I could think of when it comes to designing a good website. I
+            intentionally did not optimize the site for cross-browser or cross-device support so it might not display
+            nicely on your screen. Every element has a CSS transform rotation of a few degrees so nothing is straight or
+            lined up. The font-family, font-size, and color are not consistent across paragraphs. Every element changes
+            the mouse cursor to a different pointer and none relate to the context the cursor is currently over. There
+            are broken image links and pixelated images. Where modern websites use CSS to style most of the page, I
+            tried to use as many .png images as possible to build the UI. I kept on adding more code and useless
+            properties to every element.</p>
+        <p>One warning before you click on the link, the background is animated and might be hard to look at for too
+            long, if you click on the STOP sign in the top left corner it will stop the background animation. If you are
+            still interested in viewing it after reading everything wrong with it, <a href="MurphysLaw.html">Click
+                Here</a>. (Good luck)</p>
     </main>
-    
+    <script>
+        const toggleSwitch = document.querySelector('input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+            else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+    </script>
 </body>
+
 </html>
