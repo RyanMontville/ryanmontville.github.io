@@ -67,6 +67,17 @@
                 alt="Search page" />
         </section>
         <hr />
+        <h2>Hangman Angular App</h2>
+                <p>Another one of my early side projects was the game hangman. The app uses Angular for the front end and Typescript for the game logic. I originally planned on using an api with a Java backend, but it would cost extra money to deploy it, so I rewrote the program within the Angular app using Typescript. You can still view the code for the api in the server folder.</p>
+                <p>When a new game is started, a work is picked at random from the word bank, converts the word into an array list of underscores to represent each letter in the word and prints out an ascii gallows. The ascii output is stored in 7 arrays, one for each line of the ascii gallows. It asks the user to guess a letter. If the guess isn't in the word, it adds the guess to a list of wrong guesses and adds a body part to the proper gallows array and prints the gallows again. If the guess is correct, it replaces every underscore in the list were that letter should be. When a game ends, a reset method is called which resets the gallows, clears the list of underscores, picks a new word and random and starts the game over. <a href="https://github.com/RyanMontville/Hangman">View the project on GitHub</a>.</p>
+                        <div class="btn-wrapper"><a href="https://ryanmontville.github.io/Hangman/" class="btn green">Live Demo</a></div>
+                        <section class="gallery">
+                            <img src="/images/word-selection.png" alt="Word Selection" />
+                            <img src="/images/hangman-gameplay.png" alt="Game play" />
+                            <img src="/images/hangman-game-over.png" alt="Game Over screen" />
+                            <img src="/images/hangman-win.png" alt="Winner screen" />
+                        </section>
+        <hr />
         <h2>Philadelphia Brewery Guide</h2>
         <p>For our final capstone at Tech Elevator,my team was tasked with creating a brewery finder web app for the
             city of Philadelphia. The app allowed users and brewery owners to create an account. The app has a SQL
@@ -100,19 +111,6 @@
             <img src="https://raw.githubusercontent.com/RyanMontville/War/main/Screenshots/game-over.png"
                 alt="Game Over screen" />
         </section>
-        <hr />
-        <h2>Hangman CLI</h2>
-        <p>Another one of my early side projects was the game hangman. It currently is just a CLI, but I plan on
-            eventually turning it into a web app. The game runs on Java, and I have created an API in preparation of
-            turning it into a web app. When a new game is started, a work is picked at random from the word bank,
-            converts the word into an array list of underscores to represent each letter in the word and prints out an
-            ascii gallows. The ascii output is stored in 7 arrays, one for each line of the ascii gallows. It asks the
-            user to guess a letter. If the guess isn't in the word, it adds the guess to a list of wrong guesses and
-            adds a body part to the proper gallows array and prints the gallows again. If the guess is correct, it
-            replaces every underscore in the list were that letter should be. The game runs within a while loop, so that
-            the user can play as many times as they want without having to resart the program. When a game ends, a reset
-            method is called which resets the gallows, clears the list of underscores, picks a new word and random and
-            starts the game over. <a href="https://github.com/RyanMontville/Hangman">View the project on GitHub</a>.</p>
         <hr />
         <h2>Murphy's law - Submission for Ugly Website competition</h2>
         <p>While I was enrolled in Tech Elevator, I competed in an ugly website competition against the other students.
