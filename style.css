@@ -175,6 +175,7 @@ main hr {
   }
 
 .green {background-color: rgba(0, 163, 0,1); color: white;}
+.blue {background-color: blue; color: white;}
 
 /*  target the elemenent after the label*/
 .checkbox:checked+.label .ball {

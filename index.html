@@ -10,7 +10,8 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/52202eaccb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
 <body>
@@ -26,11 +27,7 @@
 
 
                     <div class="theme-switch-wrapper">
-                        <input
-                            type="checkbox"
-                            class="checkbox"
-                            id="checkbox"
-                        />
+                        <input type="checkbox" class="checkbox" id="checkbox" />
                         <label for="checkbox" class="label theme-switch">
                             <span class="material-symbols-outlined">dark_mode</span>
                             <span class="material-symbols-outlined">light_mode</span>
@@ -52,8 +49,7 @@
             inspect the hive. I have created a web application that they can quickly and easily record the data using
             their phone. The purpose of recording the inspections is to try to find patterns and possibly use the data
             from last year to predict what will happen this year. The app uses Java, SQL, JSON, HTML, CSS, Javascript,
-            React.js, and Bootstrap. <a href="https://github.com/RyanMontville/Bee-Inspection">View the project on
-                Github</a>.</p>
+            React.js, and Bootstrap.</p>
         <section class="gallery">
             <img src="https://raw.githubusercontent.com/RyanMontville/Bee-Inspection/main/screenshots/homepage.png"
                 alt="homepag" />
@@ -66,24 +62,36 @@
             <img src="https://raw.githubusercontent.com/RyanMontville/Bee-Inspection/main/screenshots/search-page.png"
                 alt="Search page" />
         </section>
+        <div class="btn-wrapper"><a href="https://github.com/RyanMontville/Bee-Inspection" class="btn blue">GitHub Repo</a></div>
         <hr />
         <h2>Hangman Angular App</h2>
-                <p>Another one of my early side projects was the game hangman. The app uses Angular for the front end and Typescript for the game logic. I originally planned on using an api with a Java backend, but it would cost extra money to deploy it, so I rewrote the program within the Angular app using Typescript. You can still view the code for the api in the server folder.</p>
-                <p>When a new game is started, a work is picked at random from the word bank, converts the word into an array list of underscores to represent each letter in the word and prints out an ascii gallows. The ascii output is stored in 7 arrays, one for each line of the ascii gallows. It asks the user to guess a letter. If the guess isn't in the word, it adds the guess to a list of wrong guesses and adds a body part to the proper gallows array and prints the gallows again. If the guess is correct, it replaces every underscore in the list were that letter should be. When a game ends, a reset method is called which resets the gallows, clears the list of underscores, picks a new word and random and starts the game over. <a href="https://github.com/RyanMontville/Hangman">View the project on GitHub</a>.</p>
-                        <div class="btn-wrapper"><a href="https://ryanmontville.github.io/Hangman/" class="btn green">Live Demo</a></div>
-                        <section class="gallery">
-                            <img src="/images/word-selection.png" alt="Word Selection" />
-                            <img src="/images/hangman-gameplay.png" alt="Game play" />
-                            <img src="/images/hangman-game-over.png" alt="Game Over screen" />
-                            <img src="/images/hangman-win.png" alt="Winner screen" />
-                        </section>
+        <p>Another one of my early side projects was the game hangman. The app uses Angular for the front end and
+            Typescript for the game logic. I originally planned on using an api with a Java backend, but it would cost
+            extra money to deploy it, so I rewrote the program within the Angular app using Typescript. You can still
+            view the code for the api in the server folder.</p>
+        <p>When a new game is started, a work is picked at random from the word bank, converts the word into an array
+            list of underscores to represent each letter in the word and prints out an ascii gallows. The ascii output
+            is stored in 7 arrays, one for each line of the ascii gallows. It asks the user to guess a letter. If the
+            guess isn't in the word, it adds the guess to a list of wrong guesses and adds a body part to the proper
+            gallows array and prints the gallows again. If the guess is correct, it replaces every underscore in the
+            list were that letter should be. When a game ends, a reset method is called which resets the gallows, clears
+            the list of underscores, picks a new word and random and starts the game over.</p>
+        <section class="gallery">
+            <img src="/images/word-selection.png" alt="Word Selection" />
+            <img src="/images/hangman-gameplay.png" alt="Game play" />
+            <img src="/images/hangman-game-over.png" alt="Game Over screen" />
+            <img src="/images/hangman-win.png" alt="Winner screen" />
+        </section>
+        <div class="btn-wrapper">
+            <a href="https://ryanmontville.github.io/Hangman/" class="btn green">Live Demo</a>
+            <a href="https://github.com/RyanMontville/Hangman" class="btn blue">GitHub Repo</a>
+        </div>
         <hr />
         <h2>Philadelphia Brewery Guide</h2>
         <p>For our final capstone at Tech Elevator,my team was tasked with creating a brewery finder web app for the
             city of Philadelphia. The app allowed users and brewery owners to create an account. The app has a SQL
             database that stores the user info, breweries, beer, and reviews. The front end runs on Vue.js framework,
-            with a REST API to complete the MCV. <a href="https://github.com/RyanMontville/BreweryGuide">View the
-                project on Github</a>.</p>
+            with a REST API to complete the MCV.</p>
         <section class="gallery">
             <img src="images/User_Homepage.png" alt="user-homepage" />
             <img src="images/Brewery_Detail_Page.png" alt="Viewing a brewery's page" />
@@ -94,13 +102,13 @@
             <img src="images/Admin_Page.png" alt="Admin page" />
             <img src="images/Admin_User_Review_Page.png" alt="Admin list of user's reviews" />
         </section>
+        <div class="btn-wrapper"><a href="https://github.com/RyanMontville/BreweryGuide" class="btn blue">GitHub Repo</a></div>
         <hr />
         <h2>War Card Game</h2>
         <p>One of the first side projects I started working on during the Tech Elevator bootcamp was a CLI of the card
             game War. The application evolved as we were taught the different parts of full stack development. I knew I
             wanted to make a web interface for the game, so I created an API. After the bootcamp concluded, I wanted to
-            learn React.js, so I used React to build the front end of the app. <a
-                href="https://github.com/RyanMontville/War">View the project on Github</a>.</p>
+            learn React.js, so I used React to build the front end of the app.</p>
         <section class="gallery">
             <img src="https://raw.githubusercontent.com/RyanMontville/War/main/Screenshots/homepage.png"
                 alt="Homepage" />
@@ -111,6 +119,7 @@
             <img src="https://raw.githubusercontent.com/RyanMontville/War/main/Screenshots/game-over.png"
                 alt="Game Over screen" />
         </section>
+        <div class="btn-wrapper"><a href="https://github.com/RyanMontville/War" class="btn blue">GitHub Repo</a></div>
         <hr />
         <h2>Murphy's law - Submission for Ugly Website competition</h2>
         <p>While I was enrolled in Tech Elevator, I competed in an ugly website competition against the other students.
@@ -145,8 +154,7 @@
             if (e.target.checked) {
                 document.documentElement.setAttribute('data-theme', 'dark');
                 localStorage.setItem('theme', 'dark');
-            }
-            else {
+            } else {
                 document.documentElement.setAttribute('data-theme', 'light');
                 localStorage.setItem('theme', 'light');
             }

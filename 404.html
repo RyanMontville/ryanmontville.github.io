@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Montville</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/52202eaccb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <header>
+        <section class="header-wrapper">
+            <div>
+                <h1>Ryan Montville</h1>
+                <nav>
+                    <a href="https://www.github.com/RyanMontville" title="GitHub" target="blank"><i
+                            class="fa-brands fa-github"></i><span class="link-desc">/RyanMontville</span></a>
+                    <a href="https://www.linkedin.com/in/ryanmontville" title="LinkedIn" target="blank"><i
+                            class="fa-brands fa-linkedin-in"></i><span class="link-desc">/RyanMontville</span></a>
+
+
+                    <div class="theme-switch-wrapper">
+                        <input type="checkbox" class="checkbox" id="checkbox" />
+                        <label for="checkbox" class="label theme-switch">
+                            <span class="material-symbols-outlined">dark_mode</span>
+                            <span class="material-symbols-outlined">light_mode</span>
+                            <div class='ball' />
+                        </label>
+                    </div>
+
+
+                </nav>
+            </div>
+
+            <img src="images/main.png" />
+        </section>
+
+    </header>
+    <main>
+        <h3>Couldn't find what you were looking for. <a href="https://ryanmontville.github.io/">Click to go back to Ryanmontville.github.io</a></h3>
+<img src="images/404error.png" style="width: 100%; object-fit: contain;" />
+<p style="text-align: center">Tumbeasts by <a href="http://theoatmeal.com/">Matthew Inman</a></p>
+    </main>
+    <script>
+        const toggleSwitch = document.querySelector('input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme) {
+            document.documentElement.setAttribute('data-theme', currentTheme);
+
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+    </script>
+</body>
+
+</html>
