@@ -184,7 +184,7 @@ hr {
     width: 17%;
 }
 
-#my-adventure-blog {
+.wrapper {
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -192,6 +192,7 @@ hr {
 
 #my-adventure-blog img {
     height: 200px;
+    width: 200px;
 }
 
 .checkbox {
@@ -305,7 +306,8 @@ hr {
     }
 
     #osu,
-    #now {
+    #now,
+    .wrapper {
         flex-direction: column;
     }
 
@@ -318,5 +320,8 @@ hr {
     #disney img,
     #now img {
         transform: rotate(0);
+    }
+    #my-adventure-blog img {
+        margin: 0 auto;
     }
     }
