@@ -59,7 +59,7 @@ header h1 {
     transition: 0.2s linear;
 }
 
-header nav {
+header .nav-links {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -70,6 +70,7 @@ header nav a {
     color: var(--header-color);
     font-size: 20px;
     text-decoration: none;
+    position: relative;
 }
 
 header nav a:hover {
@@ -271,7 +272,9 @@ hr {
 @media only screen and (min-width: 1221px) {
 
     .short-text,
-    .mobile-social {
+    .mobile-social,
+    .nav-toggle,
+    .nav-toggle+label {
         display: none;
     }
 
@@ -280,19 +283,22 @@ hr {
 @media only screen and (max-width: 1220px) and (min-width: 950px) {
 
     .full-text,
-    .mobile-social {
+    .mobile-social,
+    .nav-toggle,
+    .nav-toggle+label {
         display: none;
     }
 }
 
 @media only screen and (max-width: 950px) {
     .header-wrapper {
-        flex-direction: column;
+        flex-direction:column-reverse;
         gap: 10px;
     }
 
     header h1 {
         text-align: center;
+        font-size: 50px;
     }
 
     header nav {
@@ -303,6 +309,28 @@ hr {
     .link-desc,
     .short-text {
         display: none;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-toggle + label {
+        font-size: 50px;
+        position: absolute;
+        right: 10px;
+        top: 300px;
+    }
+
+    .nav-toggle:not(:checked) ~ .nav-links {
+        display: none;
+    }
+    .nav-toggle:checked ~ .nav-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.2s linear;
     }
 
     #osu,
