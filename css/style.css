@@ -301,7 +301,7 @@ hr {
         font-size: 50px;
     }
 
-    header nav {
+    header .nav-links {
         gap: 10px;
         flex-direction: column;
     }
