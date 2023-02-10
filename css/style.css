@@ -293,7 +293,8 @@ hr {
   }
   
   .captionText {
-    border: 1px solid black;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
     padding: 3px 7px;
     text-align: center;
   }
