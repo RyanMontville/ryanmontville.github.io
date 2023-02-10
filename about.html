@@ -67,10 +67,7 @@
     </header>
     <main>
         <section id="osu">
-            <p>I'm Ryan, but you probably already knew that since you found my website. I grew up in Cleveland, Ohio
-                and went to school at The Ohio State University. I graduated in 2016 with a bachelors in
-                Communication Technologies with a focus on human-computer interaction. In my free time I like
-                bowling, hanging out with my dog Rufus, and trying new things.</p>
+            <p>I'm Ryan, but you probably already knew that since you found my website. I grew up in Cleveland, Ohio and went to school at The Ohio State University. I graduated in 2016 with a bachelors in Communication Technologies with a focus on human-computer interaction. In my free time I like bowling, hanging out with my dog Rufus, and trying new things.</p>
             <img src="images/osu.png" />
         </section>
         <hr />
@@ -106,30 +103,7 @@
             <img src="images/rufus.png"/>
         </section>
     </main>
-    <script>
-        const toggleSwitch = document.querySelector('#checkbox');
-        const currentTheme = localStorage.getItem('theme');
-
-        if (currentTheme) {
-            document.documentElement.setAttribute('data-theme', currentTheme);
-
-            if (currentTheme === 'dark') {
-                toggleSwitch.checked = true;
-            }
-        }
-
-        function switchTheme(e) {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
-            }
-        }
-
-        toggleSwitch.addEventListener('change', switchTheme, false);
-    </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

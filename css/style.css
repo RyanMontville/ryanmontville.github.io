@@ -6,6 +6,7 @@
     margin: 0;
 }
 
+/************************************************ light-mode colors ********************************************************/
 :root {
     --body-background: #e5e5e5;
     --header-background: #b81f24;
@@ -18,6 +19,7 @@
     --dark-mode-icon: #ffffff;
 }
 
+/************************************************ dark-mode colors **********************************************************/
 [data-theme="dark"] {
     --body-background: #000000;
     --header-background: #333;
@@ -35,6 +37,7 @@ body {
     transition: 0.2s linear;
 }
 
+/*************************************************** Header **************************************************/
 header {
     background-color: var(--header-background);
     transition: 0.2s linear;
@@ -94,6 +97,51 @@ header .social {
     transform: scale(1.2);
 }
 
+.checkbox:checked+.label .ball {
+    transform: translateX(30px);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.label {
+    width: 40px;
+    height: 10px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+    border: 1px solid #CCC;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.ball {
+    width: 17px;
+    height: 17px;
+    background-color: #CCC;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-size: 15px !important;
+    color: var(--dark-mode-icon);
+    cursor: pointer;
+}
+
+
+/******************************************************** Main *********************************************************/
 main, article {
     background-color: var(--main-background);
     color: var(--main-color);
@@ -130,6 +178,8 @@ main ul,
 article ul {
     margin: 20px;
 }
+
+/************************************************************* About Page Rules *************************************************************/
 
 #osu,
 #disney,
@@ -173,18 +223,6 @@ hr {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.gallery img {
-    width: 17%;
-}
-
 .wrapper {
     display: flex;
     justify-content: space-between;
@@ -196,45 +234,7 @@ hr {
     width: 200px;
 }
 
-.checkbox {
-    opacity: 0;
-    position: absolute;
-    cursor: pointer;
-}
-
-.label {
-    width: 40px;
-    height: 10px;
-    display: flex;
-    border-radius: 50px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    position: relative;
-    transform: scale(1.5);
-    border: 1px solid #CCC;
-    margin: 10px;
-    cursor: pointer;
-}
-
-.ball {
-    width: 17px;
-    height: 17px;
-    background-color: #CCC;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    border-radius: 50%;
-    transition: transform 0.2s linear;
-    cursor: pointer;
-}
-
-.material-symbols-outlined {
-    font-size: 15px !important;
-    color: var(--dark-mode-icon);
-    cursor: pointer;
-}
-
+/****************************************************** Buttons ************************************************************/
 .btn-wrapper {
     display: flex;
     justify-content: center;
@@ -264,11 +264,41 @@ hr {
     color: white;
 }
 
-/*  target the elemenent after the label*/
-.checkbox:checked+.label .ball {
-    transform: translateX(30px);
-}
+/******************************************************* Image Gallery ***********************************************************/
+.image-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px 0;
+  }
+  .thumbnail {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+  }
+  
+  .image-slide {
+    position: relative;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .image-slide img {
+    width: 90%;
+  }
+  
+  .captionText {
+    border: 1px solid black;
+    padding: 3px 7px;
+    text-align: center;
+  }
 
+/****************************** Breakpoints for responsive layout / different screen sizes **********************************/
+/************ large displays ***************/
 @media only screen and (min-width: 1221px) {
 
     .short-text,
@@ -279,7 +309,7 @@ hr {
     }
 
 }
-
+/************ medium displays ***************/
 @media only screen and (max-width: 1220px) and (min-width: 950px) {
 
     .full-text,
@@ -289,7 +319,7 @@ hr {
         display: none;
     }
 }
-
+/************ small displays ***************/
 @media only screen and (max-width: 950px) {
     .header-wrapper {
         flex-direction:column-reverse;
