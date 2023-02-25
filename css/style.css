@@ -236,7 +236,7 @@ hr {
 
 #weather-bot img {
     height: 200px;
-    width: auto;
+    width: 106px;
 }
 
 /****************************************************** Buttons ************************************************************/
@@ -386,7 +386,8 @@ hr {
     #now img {
         transform: rotate(0);
     }
-    #my-adventure-blog img {
+    #my-adventure-blog img,
+    #weather-bot img {
         margin: 0 auto;
     }
     }
