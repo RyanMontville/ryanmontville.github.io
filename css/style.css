@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/************************************************ light-mode colors ********************************************************/
+:root {
+    --body-background: #e5e5e5;
+    --header-background: #b81f24;
+    --header-color: #ffffff;
+    --header-title: #ffffff;
+    --main-background: #ffffff;
+    --main-headings: #b81f24;
+    --main-color: #000000;
+    --main-link: #302AE6;
+    --dark-mode-icon: #ffffff;
+    --project-divider: #000;
+}
+
+/************************************************ dark-mode colors **********************************************************/
+[data-theme="dark"] {
+    --body-background: #000000;
+    --header-background: #333;
+    --header-title: #b81f24;
+    --header-color: #CCC;
+    --main-background: #333;
+    --main-color: #CCC;
+    --main-link: #9A97F3;
+    --dark-mode-icon: #b81f24;
+    --project-divider: #fff;
+}
+
+body {
+    font-family: 'Roboto Slab';
+    background-color: var(--body-background);
+    transition: 0.2s linear;
+}
+
+/*************************************************** Header **************************************************/
+header {
+    background-color: var(--header-background);
+    transition: 0.2s linear;
+}
+
+.header-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    color: var(--header-color);
+}
+
+header h1 {
+    color: white;
+    font-size: 7vw;
+    font-family: 'Roboto';
+    color: var(--header-title);
+    transition: 0.2s linear;
+}
+
+header .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a {
+    color: var(--header-color);
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header img {
+    height: 250px;
+    border: 10px solid var(--header-color);
+}
+
+header .social {
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa-brands:hover {
+    transform: scale(1.2);
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(30px);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.label {
+    width: 40px;
+    height: 10px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+    border: 1px solid #CCC;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.ball {
+    width: 17px;
+    height: 17px;
+    background-color: #CCC;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-size: 15px !important;
+    color: var(--dark-mode-icon);
+    cursor: pointer;
+}
+
+
+/******************************************************** Main *********************************************************/
+main,
+article {
+    background-color: var(--main-background);
+    color: var(--main-color);
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.2s linear;
+}
+
+main h2,
+article h2,
+main h3,
+article h3 main h4,
+article h4 {
+    font-family: 'Roboto';
+    color: var(--main-headings);
+    transition: 0.2s linear;
+}
+
+.project-divider {
+    font-family: 'Roboto';
+    color: var(--project-divider);
+    transition: 0.2s linear;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+  
+  .project-divider::before,
+  .project-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 3px solid var(--project-divider);
+  }
+  
+  .project-divider:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .project-divider:not(:empty)::after {
+    margin-left: .25em;
+  }
+
+
+main p,
+article p {
+    margin-bottom: 20px;
+}
+
+main a,
+article a {
+    color: var(--main-link);
+}
+
+main ul,
+article ul {
+    margin: 20px;
+}
+
+/************************************************************* About Page Rules *************************************************************/
+
+#osu,
+#disney,
+#now {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr {
+    margin: 20px;
+}
+
+#osu p {
+    flex-basis: 80%;
+}
+
+#disney div,
+#now div {
+    flex-basis: 75%;
+}
+
+#osu img {
+    height: 200px;
+    transform: rotate(20deg);
+    border: 5px solid var(--header-color);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#disney img {
+    height: 200px;
+    transform: rotate(-10deg);
+    border: 5px solid var(--header-color);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#now img {
+    height: 200px;
+    transform: rotate(-15deg);
+    border: 5px solid var(--header-color);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#my-adventure-blog img {
+    height: 200px;
+    width: 200px;
+}
+
+#weather-bot img {
+    height: 200px;
+    width: 106px;
+}
+
+/****************************************************** Buttons ************************************************************/
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+}
+
+.btn:active {
+    box-shadow: 0 0 #ffffff;
+    transform: translateY(4px);
+}
+
+.green {
+    background-color: rgba(0, 163, 0, 1);
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+/******************************************************* Image Gallery ***********************************************************/
+.image-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 5px 0;
+}
+
+.thumbnail {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+}
+
+.image-slide {
+    position: relative;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-slide img {
+    width: 90%;
+}
+
+.captionText {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    padding: 3px 7px;
+    text-align: center;
+}
+
+/****************************** Breakpoints for responsive layout / different screen sizes **********************************/
+/************ large displays ***************/
+@media only screen and (min-width: 1221px) {
+
+    .short-text,
+    .mobile-social,
+    .nav-toggle,
+    .nav-toggle+label {
+        display: none;
+    }
+
+}
+
+/************ medium displays ***************/
+@media only screen and (max-width: 1220px) and (min-width: 950px) {
+
+    .full-text,
+    .mobile-social,
+    .nav-toggle,
+    .nav-toggle+label {
+        display: none;
+    }
+}
+
+/************ small displays ***************/
+@media only screen and (max-width: 950px) {
+    .header-wrapper {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    header h1 {
+        text-align: left;
+        font-size: 50px;
+    }
+
+    header .nav-links {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .link-desc,
+    .short-text {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-toggle+label {
+        font-size: 50px;
+        position: absolute;
+        right: 10px;
+        top: 300px;
+    }
+
+    .nav-toggle:not(:checked)~.nav-links {
+        display: none;
+    }
+
+    .nav-toggle:checked~.nav-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.2s linear;
+    }
+
+    #osu,
+    #now,
+    .wrapper {
+        flex-direction: column;
+    }
+
+    #disney {
+        flex-direction: column-reverse;
+        margin: 10px;
+    }
+
+    #osu img,
+    #disney img,
+    #now img {
+        transform: rotate(0);
+    }
+
+    #my-adventure-blog img,
+    #weather-bot img {
+        margin: 0 auto;
+    }
+}
