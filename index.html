@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="thumbnail" content="https://www.ryanmontville.com/images/main.png" />
+    <meta property="og:title" content="Ryan Montville" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ryanmontville.com/" />
+    <meta property="og:image" content="https://www.ryanmontville.com/images/main.png" />
+    <meta name="description" property="og:description" content="Software Developer | Book Worm | Former Cast Member">
+    <meta name="author" content="Ryan Montville">
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='theme-color' content='#b81f24'>
+    <link rel="apple-touch-icon" sizes="180x180" href="css/image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="css/image/favicon-16x16.png">
+    <link rel='icon' sizes='192x192' href='css/image/android-chrome-192x192.png'>
+    <meta name='msapplication-square310x310logo' content='css/image/favicon-310x310.png'>
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Ryan Montville</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/52202eaccb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <header>
+        <section class="header-wrapper">
+            <div>
+                <h1>Ryan Montville</h1>
+                <nav>
+                    <input type="checkbox" class="nav-toggle" id="nav-toggle" />
+                    <label for="nav-toggle">&#9776;</label>
+
+                    <div class="nav-links">
+                        <a href="about.html">About<span class="full-text"> Me</span></a>
+                        <a href="index.html">Portfolio</a>
+                        <a href="https://ryanmontville.github.io/disney/">
+                            <span class="full-text">My Adventure Blog</span>
+                            <span class="short-text">Disney Blog</span>
+                        </a>
+                        <a href="https://www.github.com/RyanMontville" title="GitHub" target="blank"><i
+                                class="fa-brands fa-github"></i><span class="mobile-social"> GitHub</span></a>
+                        <a href="https://www.linkedin.com/in/ryanmontville" title="LinkedIn" target="blank"><i
+                                class="fa-brands fa-linkedin-in"></i><span class="mobile-social"> LinkedIn</span></a>
+                        <a href="https://www.instagram.com/ryanmontville/" title="Instagram" target="blank"><i
+                                class="fa-brands fa-instagram"></i><span class="mobile-social"> Instagram</span></a>
+                        <div class="theme-switch-wrapper">
+                            <input type="checkbox" class="checkbox" id="checkbox" />
+                            <label for="checkbox" class="label theme-switch">
+                                <span class="material-symbols-outlined">dark_mode</span>
+                                <span class="material-symbols-outlined">light_mode</span>
+                                <div class='ball'></div>
+                            </label>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+            <img src="images/main.png" />
+        </section>
+    </header>
+    <h1 class="project-divider">MY Top Projects</h1>
+    <article>
+        <h2>Bee Inspection - A React.js App (March 2023)</h2>
+        <p>My parents are bee keepers as a hobby. They wanted to start recording the state of the hives whenever they
+            inspect the hive. I have created a web application that they can quickly and easily record the data using
+            their phone. The purpose of recording the inspections is to try to find patterns and possibly use the data
+            from last year to predict what will happen this year. The app uses Java, SQL, JSON, HTML, CSS, Javascript,
+            React.js, and Bootstrap.</p>
+
+        <div id="bees-image" class="image-slide">
+            <img src="images/bees-homepage.png" />
+            <span class="captionText">Homepage</span>
+        </div>
+        <div class="image-navigation">
+            <a onclick="setImage('bees-image','images/bees-homepage.png','Homepage')">
+                <img src="images/bees-homepage.png" class="thumbnail" />
+            </a>
+            <a
+                onclick="setImage('bees-image','images/bees-inspection-frames.png','Recording the frames for a new inspection')">
+                <img src="images/bees-inspection-frames.png" class="thumbnail" />
+            </a>
+            <a
+                onclick="setImage('bees-image','images/bees-inspection-end.png','Recording the overall observations in a new inspection')">
+                <img src="images/bees-inspection-end.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('bees-image','images/bees-past-inspections.png','Viewing a past inspection')">
+                <img src="images/bees-past-inspections.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('bees-image','images/bees-search.png','Search Page')">
+                <img src="images/bees-search.png" class="thumbnail" />
+            </a>
+        </div>
+        <div class="btn-wrapper">
+            <a href="https://ryanmontville.github.io/bee-inspection/" class="btn green">View Live Demo</a>
+            <a href="https://github.com/RyanMontville/Bee-Inspection" class="btn blue">GitHub Repo</a>
+        </div>
+    </article>
+    <article>
+        <h2>Python Maze Generator - A Python App (June 2024)</h2>
+        <p>I wanted to try to use Turtle Graphics to randomly generate mazes using python. I still consider this project a work in progress because I have not yet achieved the level of randomness that I imagined when I started this project. The current version takes a word or phrase and generates a maze using the letters as paths. Note: version 1 is not solvable.</p>
+        <div id="maze-image" class="image-slide">
+            <img src="images/maze-v1.png" />
+            <span class="captionText">Version 1, completely random lines</span>
+        </div>
+        <div class="image-navigation">
+            <a onclick="setImage('maze-image','images/maze-v1.png','Version 1, completely random lines')">
+                <img src="images/maze-v1.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('maze-image','images/maze-v2.png','Version 2, Predrawn patterns with ranom varriable')">
+                <img src="images/maze-v2.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('maze-image','images/maze-v3.png','Version 3, Creates a maze using a word or phrase')">
+                <img src="images/maze-v3.png" class="thumbnail" />
+            </a>
+        </div>
+        <div class="btn-wrapper">
+            
+            <a href="https://ryanmontville.github.io/pythonmaze/version-one.html" class="btn green">Run version 1</a>
+            <a href="https://ryanmontville.github.io/pythonmaze/version-two.html" class="btn green">Run version 2</a>
+            <a href="https://ryanmontville.github.io/pythonmaze/version-three.html" class="btn green">Run version 3</a>
+            <a href="https://ryanmontville.github.io/pythonmaze/" class="btn blue">Read More</a>
+            <a href="https://github.com/RyanMontville/pythonmaze" class="btn blue">GitHub Repo</a>
+        </div>
+    </article>
+    <article>
+        <h2>Unit Converter - A Blazor App (October 2023)</h2>
+        <p>I creates this unit convert app after I started learning C#. The app runs on C# and Blazor. It can convert distances, weight, and temperature. Live demo coming soon.</p>
+        <div class="btn-wrapper">
+            <a href="https://github.com/RyanMontville/unitconverter" class="btn blue">GitHub Repo</a>
+        </div>
+    </article>
+    <h1 class="project-divider">Other Projects</h1>
+    <article>
+        <h2>Trivia Game - A Flask App (August 2023)</h2>
+        <p>I wanted to learn Python, so I took a course on Udemy, then built this app. The app runs on Flask and Python.
+            The questions are taken from <a href="https://opentdb.com/api_config.php" target="_blank">Open Trivia
+                Database</a>'s API.</p>
+        <p>The app is now live on Render.</p>
+        <div id="trivia-image" class="image-slide">
+            <img src="images/trivia-start-screen.png" />
+            <span class="captionText">Welcome Screen</span>
+        </div>
+        <div class="image-navigation">
+            <a onclick="setImage('trivia-image','images/trivia-start-screen.png','Welcome Screen')">
+                <img src="images/trivia-start-screen.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('trivia-image','images/trivia-question.png','Question Screen')">
+                <img src="images/trivia-question.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('trivia-image','images/trivia-question-mobile.png','Mobile view')">
+                <img src="images/trivia-question-mobile.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('trivia-image','images/trivia-answer.png','Answer Screen')">
+                <img src="images/trivia-answer.png" class="thumbnail" />
+            </a>
+        </div>
+        <div class="btn-wrapper">
+            <a href="https://trivia-zzld.onrender.com/" class="btn green">Play the Game on Render</a>
+            <a href="https://github.com/RyanMontville/trivia" class="btn blue">GitHub Repo</a>
+        </div>
+    </article>
+    <article id="go-fish">
+        <h2>Go Fish - An Angular App (July 2023)</h2>
+        <p>An Angular app of the card game Go Fish. Following the rules of the game by <a
+                href="https://bicyclecards.com/how-to-play/go-fish" target="_blank">Bicyclecards.com</a>. The computer
+            picks a card from its hand at random and is not influenced by the cards in the user's hand. There is a chat
+            log to keep track of all of the turns.</p>
+        <img src="images/go-fish.png" style="height: 200px; width: auto;" />
+        <img src="images/go-fish-mobile.png" style="height: 200px; width: auto;" />
+        <div class="btn-wrapper">
+            <a href="https://ryanmontville.github.io/go-fish/" class="btn green">Play the game</a>
+            <a href="https://github.com/RyanMontville/go-fish" class="btn blue">GitHub Repo</a>
+        </div>
+    </article>
+    <article id="my-adventure-blog">
+        <div class="wrapper">
+            <div class="mab-text">
+                <h2>My Adventure Blog - A React.js App (April 2023)</h2>
+                <p>In 2015 I started working in Disney World in the Disney College Program. I created a wordpress blog
+                    to talk about my time working for Disney. When I decided to switch careers after quitting Disney,
+                    one of the side projects I did was rebuilding the blog with React.js. The blog has pagination so the
+                    page isn't super long, has a scroll to top button, and has filter/search options.</p>
+            </div>
+            <img src="images/disney-blog.png" alt="My Adventure Blog" />
+        </div>
+        <div class="btn-wrapper">
+            <a href="https://ryanmontville.github.io/disney/" class="btn green">View the Blog</a>
+            <a href="https://github.com/RyanMontville/disney" class="btn blue">GitHub Repo</a>
+        </div>
+    </article>
+    <article>
+        <h2>War Card Game - A Angular App (February 2023)</h2>
+        <p>One of the first side projects I started working on during the Tech Elevator bootcamp was a CLI of the card
+            game War. The application evolved as we were taught the different parts of full stack development. I knew I
+            wanted to make a web interface for the game, so I created an API. After the bootcamp concluded, I wanted to
+            learn React.js, so I used React to build the front end of the app.</p>
+        <p>I have created a second version of the app in Angular that doesn't rely on the API or Java, so that I could
+            deploy it to GitHub pages. The Angular version of the app handles all of the game logic in Typescript.</p>
+        <div id="war-image" class="image-slide">
+            <img src="images/war-welcome-screen.png" />
+            <span class="captionText">Welcome Screen</span>
+        </div>
+        <div class="image-navigation">
+            <a onclick="setImage('war-image','images/war-welcome-screen.png','Welcome Screen')">
+                <img src="images/war-welcome-screen.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('war-image','images/war-game-play.png','Game Play')">
+                <img src="images/war-game-play.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('war-image','images/war-war-screen.png','War Screen')">
+                <img src="images/war-war-screen.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('war-image','images/war-game-over.png','Game Over Screen')">
+                <img src="images/war-game-over.png" class="thumbnail" />
+            </a>
+        </div>
+        <div class="btn-wrapper">
+            <a href="https://ryanmontville.github.io/War/" class="btn green">Play the Game</a>
+            <a href="https://github.com/RyanMontville/War" class="btn blue">GitHub Repo</a>
+        </div>
+    </article>
+    <article>
+        <h2>Hangman - An Angular App (February 2023)</h2>
+        <p>Another one of my early side projects was the game hangman. The app uses Angular for the front end and
+            Typescript for the game logic. I originally planned on using an api with a Java backend, but it would cost
+            extra money to deploy it, so I rewrote the program within the Angular app using Typescript. You can still
+            view the code for the api in the server folder.</p>
+        <p>When a new game is started, a word is picked at random from the word bank, converts the word into an array
+            list of underscores to represent each letter in the word and prints out an ascii gallows. The ascii output
+            is stored in 7 arrays, one for each line of the ascii gallows. It asks the user to guess a letter. If the
+            guess isn't in the word, it adds the guess to a list of wrong guesses and adds a body part to the proper
+            gallows array and prints the gallows again. If the guess is correct, it replaces every underscore in the
+            list where that letter should be. When a game ends, a reset method is called which resets the gallows, clears
+            the list of underscores, picks a new word and random and starts the game over.</p>
+        <div id="hangman-image" class="image-slide">
+            <img src="images/hangman-word-selection.png" />
+            <span class="captionText">Word Selection Screen</span>
+        </div>
+        <div class="image-navigation">
+            <a onclick="setImage('hangman-image','images/hangman-word-selection.png','Word Selection Screen')">
+                <img src="images/hangman-word-selection.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('hangman-image','/images/hangman-gameplay.png','Game Play')">
+                <img src="/images/hangman-gameplay.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('hangman-image','/images/hangman-game-over.png','Game Over screen')">
+                <img src="/images/hangman-game-over.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('hangman-image','/images/hangman-win.png','Winner Screen')">
+                <img src="/images/hangman-win.png" class="thumbnail" />
+            </a>
+        </div>
+        <div class="btn-wrapper">
+            <a href="https://ryanmontville.github.io/Hangman/" class="btn green">Play the Game</a>
+            <a href="https://github.com/RyanMontville/Hangman" class="btn blue">GitHub Repo</a>
+        </div>
+    </article>
+    <article id="weather-bot">
+        <div class="wrapper">
+            <div class="text">
+                <h2>Weather Bot - An Angular App (February 2023)</h2>
+                <p>
+                    The app uses open-meteo.com api to get weather and tomtom.com geocoding api to get location. The
+                    bubbles are populated from an array. When the user enters a query, the query is added to the array
+                    the app runs through a lot if conditional checks to see if the query includes certain words and if
+                    so, executes the corresponding function, and adds the output to the array. Since the app is just
+                    checking for certain words, it shouldn't matter if the query is "current temp" or "What is the
+                    temperature currently?". The app can give weather info about Current, Today, Tomorrow, Week,
+                    Weekend, Hourly, or any day of the week.
+                </p>
+            </div>
+            <img src="images/weather-bot.png" alt="weather bot" />
+        </div>
+
+        <div class="btn-wrapper">
+            <a href="https://ryanmontville.github.io/weather-bot/" class="btn green">Chat with the bot</a>
+            <a href="https://github.com/RyanMontville/weather-bot" class="btn blue">GitHub Repo</a>
+        </div>
+    </article>
+    <article>
+        <h2>Philadelphia Brewery Guide - A Vue.js App (December 2022)</h2>
+        <p>For our final capstone at Tech Elevator, my team was tasked with creating a brewery finder web app for the
+            city of Philadelphia. The app allowed users and brewery owners to create an account. The app has a SQL
+            database that stores the user info, breweries, beer, and reviews. The front end runs on Vue.js framework,
+            with a REST API to complete the MCV.</p>
+        <div id="brewery-image" class="image-slide">
+            <img src="images/pbg-create-account.png" />
+            <span class="captionText">Creating an account</span>
+        </div>
+        <div class="image-navigation">
+            <a onclick="setImage('brewery-image','images/pbg-create-account.png','Creating an account')">
+                <img src="images/pbg-create-account.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('brewery-image','images/pbg-user-homepage.png','Homepage')">
+                <img src="images/pbg-user-homepage.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('brewery-image','images/pbg-brewery-detail.png','Viewing a brewery\'s page')">
+                <img src="images/pbg-brewery-detail.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('brewery-image','images/pbg-beer-detail.png','Viewing the reviews for a beer')">
+                <img src="images/pbg-beer-detail.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('brewery-image','images/pbg-amin-page.png','Admin Page')">
+                <img src="images/pbg-amin-page.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('brewery-image','images/pbg-review.png','Adding a review for a beer')">
+                <img src="images/pbg-review.png" class="thumbnail" />
+            </a>
+        </div>
+        <div class="btn-wrapper">
+            <a href="https://ryanmontville.github.io/BreweryGuide/" class="btn green">View Live Demo</a>
+            <a href="https://github.com/RyanMontville/BreweryGuide" class="btn blue">GitHub Repo</a>
+        </div>
+    </article>
+    <article>
+        <h2>Murphy's law - Submission For Ugly Website Competition (November 2022)</h2>
+        <p>While I was enrolled in Tech Elevator, I competed in an ugly website competition against the other students.
+            The purpose of the competition was to develop a better understanding of HTML and CSS and to get us to
+            research and explore web design on our own outside of lecture. I took inspiration from the horrible ugly
+            sites of the 90s. I tried to break every rule I could think of when it comes to designing a good website. I
+            intentionally did not optimize the site for cross-browser or cross-device support so it might not display
+            nicely on your screen. Every element has a CSS transform rotation of a few degrees so nothing is straight or
+            lined up. The font-family, font-size, and color are not consistent across paragraphs. Every element changes
+            the mouse cursor to a different pointer and none relate to the context the cursor is currently over. There
+            are broken image links and pixelated images. Where modern websites use CSS to style most of the page, I
+            tried to use as many .png images as possible to build the UI. I kept on adding more code and useless
+            properties to every element.</p>
+        <p>One warning before you click on the link, the background is animated and might be hard to look at for too
+            long, if you click on the STOP sign in the top left corner it will stop the background animation. If you are
+            still interested in viewing it after reading everything wrong with it, <a href="MurphysLaw.html">Click
+                Here</a>. (Good luck)</p>
+    </article>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
