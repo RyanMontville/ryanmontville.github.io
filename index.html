@@ -131,8 +131,24 @@
     </article>
     <article>
         <h2>Unit Converter - A Blazor App (October 2023)</h2>
-        <p>I creates this unit convert app after I started learning C#. The app runs on C# and Blazor. It can convert distances, weight, and temperature. Live demo coming soon.</p>
+        <p>In 2023 I wanted to learn C# to see how it compared to Java. After learning the basics I created this unit converter app. It uses Blazor as the web interface.</p>
+        <div id="unit-image" class="image-slide">
+            <img src="images/unit-distance.png" />
+            <span class="captionText">Distance conversion page</span>
+        </div>
+        <div class="image-navigation">
+            <a onclick="setImage('unit-image','images/unit-distance.png','Distance conversion page')">
+                <img src="images/unit-distance.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('unit-image','images/unit-distance.png','Temperature conversion page')">
+                <img src="images/unit-distance.png" class="thumbnail" />
+            </a>
+            <a onclick="setImage('unit-image','images/unit-weight.png','Weight conversion page')">
+                <img src="images/unit-weight.png" class="thumbnail" />
+            </a>
+        </div>
         <div class="btn-wrapper">
+            <a href="https://ryanmontville.github.io/unitconverter/" class="btn green">View Live Demo</a>
             <a href="https://github.com/RyanMontville/unitconverter" class="btn blue">GitHub Repo</a>
         </div>
     </article>
