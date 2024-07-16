@@ -2,25 +2,111 @@
 <rss version="2.0">
 <channel>
 <title>Ryan Montville</title>
+<atom:link href="https://ryanmontville.github.io/feed.xml" rel="self" type="application/rss+xml" />
 <link>https://ryanmontville.com/</link>
-<description>I made an rss feed because why not. Really just testing this.</description>
+<description>Ryan Montville - Software Developer | Book Worm | Former Cast Member</description>
+<language>en-US</language>
+<image>
+	<url>https://ryanmontville.github.io/css/image/favicon-32x32.png</url>
+	<title>Ryan Montville</title>
+	<link>https://blogmickey.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
 <item>
-<title>Bee Inspection - A React.js App (March 2023)</title>
+<title>Bee Inspection - A React.js App</title>
 <link>https://github.com/RyanMontville/Bee-Inspection</link>
 <guid>https://github.com/RyanMontville/Bee-Inspection</guid>
-<pubDate>Wed, 01 Mar 2023 12:00:00 GMT</pubDate>
-<description>My parents are bee keepers as a hobby. They wanted to start recording the state of the hives whenever they
+<pubDate>Mon, 27 Mar 2023 12:00:00 GMT</pubDate>
+<description><p>My parents are bee keepers as a hobby. They wanted to start recording the state of the hives whenever they
             inspect the hive. I have created a web application that they can quickly and easily record the data using
             their phone. The purpose of recording the inspections is to try to find patterns and possibly use the data
             from last year to predict what will happen this year. The app uses Java, SQL, JSON, HTML, CSS, Javascript,
-            React.js, and Bootstrap.<a href="https://github.com/RyanMontville/Bee-Inspection">View the Github Repo</a> | <a href="https://ryanmontville.github.io/bee-inspection/">View the Live Demo</a></description>
+            React.js, and Bootstrap.</p>
+            <p><a href="https://github.com/RyanMontville/Bee-Inspection">View the Github Repo</a> | <a href="https://ryanmontville.github.io/bee-inspection/">View the Live Demo</a></p></description>
 </item>
 <item>
-<title>Python Maze Generator - A Python App (June 2024)</title>
+<title>Python Maze Generator - A Python App</title>
 <link>https://ryanmontville.github.io/pythonmaze/</link>
 <guid>https://ryanmontville.github.io/pythonmaze/</guid>
-<pubDate>Sat, 01 Jun 2024 12:00:00 GMT</pubDate>
-<description>I wanted to try to use Turtle Graphics to randomly generate mazes using python. I still consider this project a work in progress because I have not yet achieved the level of randomness that I imagined when I started this project. Version 1 creates a grid and randomly draws line on the grid. It almost always is unsolvable. Version 2 draws premade segments than randomly change in size and randomly close off paths. The current version (version 3) takes a word or phrase and generates a maze using the letters as paths.<a href="https://github.com/RyanMontville/pythonmaze/">View the Github Repo</a> | <a href="https://ryanmontville.github.io/pythonmaze/version-three.html">View the Live Demo</a></description>
+<pubDate>Fri, 07 Jun 2024 12:00:00 GMT</pubDate>
+<description><p>I wanted to try to use Turtle Graphics to randomly generate mazes using python. I still consider this project a work in progress because I have not yet achieved the level of randomness that I imagined when I started this project. Version 1 creates a grid and randomly draws line on the grid. It almost always is unsolvable. Version 2 draws premade segments than randomly change in size and randomly close off paths. The current version (version 3) takes a word or phrase and generates a maze using the letters as paths.</p>
+<p><a href="https://github.com/RyanMontville/pythonmaze/">View the Github Repo</a> | <a href="https://ryanmontville.github.io/pythonmaze/version-three.html">View the Live Demo</a></p></description>
+</item>
+<item>
+<title>Unit Converter - A Blazor App</title>
+<link>https://github.com/RyanMontville/unitconverter</link>
+<guid>https://github.com/RyanMontville/unitconverter</guid>
+<pubDate>Sun, 01 Oct 2023 12:00:00 GMT</pubDate>
+<description><p>In 2023 I wanted to learn C# to see how it compared to Java. After learning the basics I created this unit converter app. It uses Blazor as the web interface.</p>
+<p><a href="https://github.com/RyanMontville/unitconverter/">View the Github Repo</a> | <a href="https://ryanmontville.github.io/unitconverter/">View the Live Demo</a></p></description>
+</item>
+<item>
+<title>Trivia Game - A Flask App</title>
+<link>https://github.com/RyanMontville/trivia</link>
+<guid>https://github.com/RyanMontville/trivia</guid>
+<pubDate>Wed, 09 Aug 2023 12:00:00 GMT</pubDate>
+<description><p>I wanted to learn Python, so I took a course on Udemy, then built this app. The app runs on Flask and Python. The questions are taken from <a href="https://opentdb.com/api_config.php">Open Trivia Database</a>'s API.</p>
+<p><a href="https://github.com/RyanMontville/trivia">View the Github Repo</a> | <a href="https://trivia-zzld.onrender.com">Play the game on Render</a></p></description>
+</item>
+<item>
+<title>Go Fish - An Angular App</title>
+<link>https://github.com/RyanMontville/go-fish</link>
+<guid>https://github.com/RyanMontville/go-fish</guid>
+<pubDate>Sun, 02 Jul 2023 12:00:00 GMT</pubDate>
+<description><p>An Angular app of the card game Go Fish. Following the rules of the game by <a href="https://bicyclecards.com/how-to-play/go-fish">Bicyclecards.com</a>. The computer picks a card from its hand at random and is not influenced by the cards in the user's hand. There is a chat log to keep track of all of the turns.</p>
+<p><a href="https://github.com/RyanMontville/go-fish">View the Github Repo</a> | <a href="https://ryanmontville.github.io/go-fish/">Play the game</a></p></description>
+</item>
+<item>
+<title>My Adventure Blog - A React.js App</title>
+<link>https://github.com/RyanMontville/disney</link>
+<guid>https://github.com/RyanMontville/disney</guid>
+<pubDate>Sat, 01 Apr 2023 12:00:00 GMT</pubDate>
+<description><p>In 2015 I started working in Disney World in the Disney College Program. I created a wordpress blog to talk about my time working for Disney. When I decided to switch careers after quitting Disney, one of the side projects I did was rebuilding the blog with React.js. The blog has pagination so the page isn't super long, has a scroll to top button, and has filter/search options.</p>
+<p><a href="https://github.com/RyanMontville/disney">View the Github Repo</a> | <a href="https://ryanmontville.github.io/disney/">View the blog</a></p></description>
+</item>
+<item>
+<title>Weather Bot - An Angular App</title>
+<link>https://github.com/RyanMontville/weather-bot</link>
+<guid>https://github.com/RyanMontville/weather-bot</guid>
+<pubDate>Sat, 25 Feb 2023 12:00:00 GMT</pubDate>
+<description><p>The app uses <a href="open-meteo.com">open-meteo.com</a> api to get weather and <a href="tomtom.com">tomtom.com</a> geocoding api to get location. The bubbles are populated from an array. When the user enters a query, the query is added to the array the app runs through a lot if conditional checks to see if the query includes certain words and if so, executes the corresponding function, and adds the output to the array. Since the app is just checking for certain words, it shouldn't matter if the query is "current temp" or "What is the temperature currently?". The app can give weather info about Current, Today, Tomorrow, Week, Weekend, Hourly, or any day of the week. </p>
+<p><a href="https://github.com/RyanMontville/weather-bot">View the Github Repo</a> | <a href="https://ryanmontville.github.io/weather-bot/">Talk to the chatbot</a></p></description>
+</item>
+<item>
+<title>War Card Game - A Angular App</title>
+<link>https://github.com/RyanMontville/War</link>
+<guid>https://github.com/RyanMontville/War</guid>
+<pubDate>Wed, 15 Feb 2023 12:00:00 GMT</pubDate>
+<description><p>One of the first side projects I started working on during the Tech Elevator bootcamp was a CLI of the card game War. The application evolved as we were taught the different parts of full stack development. I knew I wanted to make a web interface for the game, so I created an API. After the bootcamp concluded, I wanted to learn React.js, so I used React to build the front end of the app.</p>
+<p>I have created a second version of the app in Angular that doesn't rely on the API or Java, so that I could deploy it to GitHub pages. The Angular version of the app handles all of the game logic in Typescript.</p>
+<p><a href="https://github.com/RyanMontville/War">View the Github Repo</a> | <a href="https://ryanmontville.github.io/War/">Play the game</a></p></description>
+</item>
+<item>
+<title>Hangman - An Angular App</title>
+<link>https://github.com/RyanMontville/Hangman</link>
+<guid>https://github.com/RyanMontville/Hangman</guid>
+<pubDate>Tue, 07 Feb 2023 12:00:00 GMT</pubDate>
+<description><p>Another one of my early side projects was the game hangman. The app uses Angular for the front end and Typescript for the game logic. I originally planned on using an api with a Java backend, but it would cost extra money to deploy it, so I rewrote the program within the Angular app using Typescript. You can still view the code for the api in the server folder.</p>
+<p>When a new game is started, a word is picked at random from the word bank, converts the word into an array list of underscores to represent each letter in the word and prints out an ascii gallows. The ascii output is stored in 7 arrays, one for each line of the ascii gallows. It asks the user to guess a letter. If the guess isn't in the word, it adds the guess to a list of wrong guesses and adds a body part to the proper gallows array and prints the gallows again. If the guess is correct, it replaces every underscore in the list where that letter should be. When a game ends, a reset method is called which resets the gallows, clears the list of underscores, picks a new word and random and starts the game over.</p>
+<p><a href="https://github.com/RyanMontville/Hangman">View the Github Repo</a> | <a href="https://ryanmontville.github.io/Hangman/">Play the game</a></p></description>
+</item>
+<item>
+<title>Philadelphia Brewery Guide - A Vue.js App</title>
+<link>https://github.com/RyanMontville/BreweryGuide</link>
+<guid>https://github.com/RyanMontville/BreweryGuide</guid>
+<pubDate>Fri, 16 Dec 2022 12:00:00 GMT</pubDate>
+<description><p>For our final capstone at Tech Elevator, my team was tasked with creating a brewery finder web app for the city of Philadelphia. The app allowed users and brewery owners to create an account. The app has a SQL database that stores the user info, breweries, beer, and reviews. The front end runs on Vue.js framework, with a REST API to complete the MCV.</p>
+<p><a href="https://github.com/RyanMontville/BreweryGuide">View the Github Repo</a> | <a href="https://ryanmontville.github.io/BreweryGuide/">View live demo</a></p></description>
+</item>
+<item>
+<title>Murphy's law - Submission For Ugly Website Competition</title>
+<link>https://github.com/RyanMontville/murphys-law</link>
+<guid>https://github.com/RyanMontville/murphys-law</guid>
+<pubDate>Sun, 20 Nov 2022 12:00:00 GMT</pubDate>
+<description><p>While I was enrolled in Tech Elevator, I competed in an ugly website competition against the other students. The purpose of the competition was to develop a better understanding of HTML and CSS and to get us to research and explore web design on our own outside of lecture. I took inspiration from the horrible ugly sites of the 90s. I tried to break every rule I could think of when it comes to designing a good website. I intentionally did not optimize the site for cross-browser or cross-device support so it might not display nicely on your screen. Every element has a CSS transform rotation of a few degrees so nothing is straight or lined up. The font-family, font-size, and color are not consistent across paragraphs. Every element changes the mouse cursor to a different pointer and none relate to the context the cursor is currently over. There are broken image links and pixelated images. Where modern websites use CSS to style most of the page, I tried to use as many .png images as possible to build the UI. I kept on adding more code and useless properties to every element.</p>
+<p>One warning before you click on the link, the background is animated and might be hard to look at for too long, if you click on the STOP sign in the top left corner it will stop the background animation. If you are still interested in viewing it after reading everything wrong with it, <a href="https://ryanmontville.github.io/murphys-law/">Click Here</a>. (Good luck)</p>
+<p><a href="https://github.com/RyanMontville/murphys-law">View the Github Repo</a></p></description>
 </item>
 </channel>
 </rss>
