@@ -2,7 +2,6 @@
 <rss version="2.0">
 <channel>
 <title>Ryan Montville</title>
-<atom:link href="https://ryanmontville.github.io/feed.xml" rel="self" type="application/rss+xml" />
 <link>https://ryanmontville.com/</link>
 <description>Ryan Montville - Software Developer | Book Worm | Former Cast Member</description>
 <language>en-US</language>
