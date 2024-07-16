@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Ryan Montville</title>
+<link>https://ryanmontville.com/</link>
+<description>I made an rss feed because why not. Really just testing this.</description>
+<item>
+<title>Bee Inspection - A React.js App (March 2023)</title>
+<link>https://github.com/RyanMontville/Bee-Inspection</link>
+<guid>https://github.com/RyanMontville/Bee-Inspection</guid>
+<pubDate>Wed, 01 Mar 2023 12:00:00 GMT</pubDate>
+<description>My parents are bee keepers as a hobby. They wanted to start recording the state of the hives whenever they
+            inspect the hive. I have created a web application that they can quickly and easily record the data using
+            their phone. The purpose of recording the inspections is to try to find patterns and possibly use the data
+            from last year to predict what will happen this year. The app uses Java, SQL, JSON, HTML, CSS, Javascript,
+            React.js, and Bootstrap.<a href="https://github.com/RyanMontville/Bee-Inspection">View the Github Repo</a> | <a href="https://ryanmontville.github.io/bee-inspection/">View the Live Demo</a></description>
+</item>
+<item>
+<title>Python Maze Generator - A Python App (June 2024)</title>
+<link>https://ryanmontville.github.io/pythonmaze/</link>
+<guid>https://ryanmontville.github.io/pythonmaze/</guid>
+<pubDate>Sat, 01 Jun 2024 12:00:00 GMT</pubDate>
+<description>I wanted to try to use Turtle Graphics to randomly generate mazes using python. I still consider this project a work in progress because I have not yet achieved the level of randomness that I imagined when I started this project. Version 1 creates a grid and randomly draws line on the grid. It almost always is unsolvable. Version 2 draws premade segments than randomly change in size and randomly close off paths. The current version (version 3) takes a word or phrase and generates a maze using the letters as paths.<a href="https://github.com/RyanMontville/pythonmaze/">View the Github Repo</a> | <a href="https://ryanmontville.github.io/pythonmaze/version-three.html">View the Live Demo</a></description>
+</item>
+</channel>
+</rss>
