@@ -24,7 +24,7 @@ const mazeGenerator: Project = new Project(
     "<p>I wanted to try to use <a href='https://docs.python.org/3/library/turtle.html'>Turtle Graphics</a> to randomly generate mazes using python. I still consider this project a work in progress because I have not yet achieved the level of randomness that I imagined when I started this project. Version 1 creates a grid and randomly draws lines on the grid. It almost always is unsolvable. Version 2 draws premade segments than randomly change in size and randomly close off paths. The current version (version 3) takes a word or phrase and generates a maze using the letters as paths.</p>",
     [
         new Link("Version 1", "https://raw.githubusercontent.com/RyanMontville/pythonmaze/main/images/V010.png"),
-        new Link("Version 2", "https://ryanmontville.github.io/images/maze-v2.png"),
+        new Link("Version 2", "https://raw.githubusercontent.com/RyanMontville/pythonmaze/main/images/V021-D.png"),
         new Link("Version 3", "https://raw.githubusercontent.com/RyanMontville/pythonmaze/main/images/hello-world.png")
     ],
     [
