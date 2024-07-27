@@ -1,0 +1,50 @@
+section {
+    padding: 0 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-img {
+    border: 5px solid var(--header-color);
+    width: 200px; /* Example width */
+    height: 200px; /* Maintain aspect ratio */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#osu img {
+    transform: rotate(-20deg);
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+
+#disney img {
+    transform: rotate(20deg);
+    margin-left: 20px; /* Adjust margin as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+    /* Adjust the size of the image if necessary */
+}
+
+#present img {
+    transform: rotate(-10deg);
+    margin-right: 20px; /* Adjust margin as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+    /* Adjust the size of the image if necessary */
+}
+
+#osu p,
+#disney p,
+#present p {
+    overflow-wrap: break-word;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 670px) {
+    section {
+        flex-direction: column;
+    }
+
+    hr {
+        display: none;
+    }
+}

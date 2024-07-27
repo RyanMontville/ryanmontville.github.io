@@ -1,0 +1,29 @@
+<div id="header-wrapper">
+    <header>
+        <img src="https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/main/images/main.png" alt="Profile picture" />
+        <h1>Ryan Montville</h1>
+    </header>
+</div>
+
+<nav id="large-screens">
+    <a routerLink="/about">About<span class="full-text"> Me</span></a>
+    <a routerLink="/">Portfolio</a>
+    <a href="https://ryanmontville.github.io/disney/">My Adventure Blog</a>
+    <a href="https://www.github.com/RyanMontville" title="GitHub" target="blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/ryanmontville" title="LinkedIn" target="blank">LinkedIn</a>
+    <a href="https://www.instagram.com/ryanmontville/" title="Instagram" target="blank">Instagram</a>
+</nav>
+<nav id="small-screens" (click)="showMobileMenu = !showMobileMenu">
+    <span class="material-symbols-outlined">menu</span>
+    <span>Menu</span>
+</nav>
+@if (showMobileMenu) {
+    <div id="mobile-menu">
+        <a routerLink="/about">About<span class="full-text"> Me</span></a>
+        <a routerLink="/">Portfolio</a>
+        <a href="https://ryanmontville.github.io/disney/">My Adventure Blog</a>
+        <a href="https://www.github.com/RyanMontville" title="GitHub" target="blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/ryanmontville" title="LinkedIn" target="blank">LinkedIn</a>
+        <a href="https://www.instagram.com/ryanmontville/" title="Instagram" target="blank">Instagram</a>
+    </div>
+}

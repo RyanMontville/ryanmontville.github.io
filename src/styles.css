@@ -1,0 +1,246 @@
+@import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-background: #000000;
+        --header-background: #333;
+        --nav-background: #404040;
+        --nav-color: #ccc;
+        --header-title: #b81f24;
+        --header-color: #ccc;
+        --main-background: #333;
+        --main-color: #ccc;
+        --main-link: #9a97f3;
+        --dark-mode-icon: #b81f24;
+        --project-divider: #fff;
+        --links-background: #000000;
+    }
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        --body-background: #e5e5e5;
+        --header-background: #b81f24;
+        --nav-background: #808080;
+        --nav-color: #fff;
+        --header-color: #ffffff;
+        --header-title: #ffffff;
+        --main-background: #ffffff;
+        --main-headings: #b81f24;
+        --main-color: #000000;
+        --main-link: #302ae6;
+        --dark-mode-icon: #ffffff;
+        --project-divider: #000;
+        --links-background: #b81f24;
+    }
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    background-color: var(--body-background);
+    color: var(--main-color);
+}
+#header-wrapper {
+    background-color: var(--header-background);
+}
+
+header {
+    color: var(--header-color);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 200px;
+    margin-right: 20px;
+    border: 10px solid var(--header-color);
+}
+
+header h1 {
+    font-size: 7vw;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family:
+        Arial Black,
+        Arial Bold,
+        Gadget,
+        sans-serif;
+}
+
+main h2 {
+    color: var(--main-headings);
+}
+
+nav,
+#mobile-menu {
+    background-color: var(--nav-background);
+    color: var(--nav-color);
+    color: #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a,
+#mobile-menu a {
+    color: var(--nav-color);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover,
+#mobile-menu a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+#filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filter-bar select {
+    margin-left: 5px;
+    appearance: none;
+    font-size: 1.15rem;
+    width: 180px;
+    padding: 10px;
+    background-color: var(--main-background);
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+article {
+    position: relative;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: var(--main-background);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.skills,
+article h2 {
+    padding: 5px 20px;
+}
+
+.skills img {
+    margin: 5px;
+}
+
+article p {
+    padding: 10px 5px;
+}
+
+article p a {
+    color: var(--main-link);
+}
+
+.screenshots {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.screenshots img {
+    width: 200px;
+    border: 1px solid black;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid var(--links-background);
+    border-radius: 5px;
+    color: var(--main-color);
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+.links a:hover {
+    background-color: var(--links-background);
+    color: white;
+}
+
+#not-found-page {
+    text-align: center;
+}
+
+#not-found-page h2 {
+    font-size: 30px;
+}
+
+#not-found-page img {
+    width: 95%;
+}
+
+.copyright {
+    font-size: 15px;
+}
+
+hr {
+    margin: 10px 10px;
+}
+
+#mobile-menu {
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s linear;
+}
+
+#mobile-menu a {
+    font-size: 25px;
+}
+
+@media only screen and (min-width: 926px) {
+    #small-screens { display: none; }
+}
+
+@media only screen and (max-width: 925px) {
+    #large-screens { display: none; }
+    main {
+        margin: 10px;
+    }
+    nav {
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    #small-screens {
+        display: flex;
+    }
+
+    .links {
+        flex-wrap: wrap;
+    }
+
+    .links a {
+        background-color: var(--links-background);
+        color: white;
+    }
+}
