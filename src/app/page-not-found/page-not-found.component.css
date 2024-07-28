@@ -1,0 +1,15 @@
+#not-found-page {
+    text-align: center;
+}
+
+#not-found-page h2 {
+    font-size: 30px;
+}
+
+#not-found-page img {
+    width: 95%;
+}
+
+.copyright {
+    font-size: 15px;
+}

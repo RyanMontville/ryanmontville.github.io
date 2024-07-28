@@ -1,0 +1,35 @@
+<article class="accordion">
+    <section class="project-header" (click)="expand = !expand">
+        @if (!expand) {
+        <span class="material-symbols-outlined">
+            keyboard_arrow_down
+        </span>
+        }
+        @if (expand) {
+        <span class="material-symbols-outlined">
+            close
+        </span>
+        }
+        <span class="project-info">
+            <h2>{{project.title}}</h2>
+            <p>{{project.date}}</p>
+        </span>
+        <img [src]="displayFirstImage(project.screenshots)" [alt]="project.title" class="thumbnail" />
+    </section>
+
+    @if (expand) {
+    <div [innerHTML]="project.description"></div>
+    <div class="screenshots">
+        @for (screenshot of project.screenshots; track screenshot) {
+        <a [href]="screenshot.linkURL">
+            <img [src]="screenshot.linkURL" [alt]="screenshot.linkText" [title]="screenshot.linkText" />
+        </a>
+        }
+    </div>
+    <div class="links">
+        @for (link of project.links; track link) {
+        <a [href]="link.linkURL">{{link.linkText}}</a>
+        }
+    </div>
+    }
+</article>

@@ -45,29 +45,7 @@ body {
     background-color: var(--body-background);
     color: var(--main-color);
 }
-#header-wrapper {
-    background-color: var(--header-background);
-}
 
-header {
-    color: var(--header-color);
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header img {
-    height: 200px;
-    margin-right: 20px;
-    border: 10px solid var(--header-color);
-}
-
-header h1 {
-    font-size: 7vw;
-}
 
 h1,
 h2,
@@ -84,50 +62,9 @@ main h2 {
     color: var(--main-headings);
 }
 
-nav,
-#mobile-menu {
-    background-color: var(--nav-background);
-    color: var(--nav-color);
-    color: #ccc;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav a,
-#mobile-menu a {
-    color: var(--nav-color);
-    font-size: 20px;
-    text-decoration: none;
-}
-
-nav a:hover,
-#mobile-menu a:hover {
-    text-decoration: underline;
-}
-
 main {
     max-width: 900px;
     margin: 10px auto;
-}
-
-#filter-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#filter-bar select {
-    margin-left: 5px;
-    appearance: none;
-    font-size: 1.15rem;
-    width: 180px;
-    padding: 10px;
-    background-color: var(--main-background);
-    border: 1px solid #caced1;
-    border-radius: 0.25rem;
-    color: var(--main-color);
-    cursor: pointer;
 }
 
 article {
@@ -185,34 +122,8 @@ article p a {
     color: white;
 }
 
-#not-found-page {
-    text-align: center;
-}
-
-#not-found-page h2 {
-    font-size: 30px;
-}
-
-#not-found-page img {
-    width: 95%;
-}
-
-.copyright {
-    font-size: 15px;
-}
-
 hr {
     margin: 10px 10px;
-}
-
-#mobile-menu {
-    display: flex;
-    flex-direction: column;
-    transition: 0.2s linear;
-}
-
-#mobile-menu a {
-    font-size: 25px;
 }
 
 @media only screen and (min-width: 926px) {
@@ -233,6 +144,8 @@ hr {
 @media only screen and (max-width: 670px) {
     #small-screens {
         display: flex;
+        justify-content: flex-end;
+        font-size: 20px;
     }
 
     .links {

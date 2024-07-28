@@ -22,9 +22,9 @@
             <option>JSON</option>
         </select>
     </div>
+    
     @for (project of projectsToShow; track project) {
-    <article>
+        <!--<app-project-accordion [project]="project" />-->
         <app-project-overview [project]="project" />
-    </article>
     }
 </main>

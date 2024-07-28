@@ -36,15 +36,21 @@ section {
 #disney p,
 #present p {
     overflow-wrap: break-word;
-    padding: 10px;
 }
 
 @media only screen and (max-width: 670px) {
-    section {
-        flex-direction: column;
-    }
-
     hr {
         display: none;
     }
+    #osu,
+    #present {
+        flex-direction: column;
+    }
+    #disney {
+        flex-direction: column-reverse;
+    }
+    #disney img {
+        margin: 35px;
+    }
+
 }

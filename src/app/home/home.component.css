@@ -1,0 +1,18 @@
+#filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#filter-bar select {
+    margin-left: 5px;
+    appearance: none;
+    font-size: 1.15rem;
+    width: 180px;
+    padding: 10px;
+    background-color: var(--main-background);
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: var(--main-color);
+    cursor: pointer;
+}

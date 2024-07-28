@@ -2,14 +2,15 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from "../header/header.component";
 import { CommonModule } from '@angular/common';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
-import { Project } from '../project.model';
+import { Link, Project } from '../project.model';
 import { projectsData } from '../data';
 import { ProjectOverviewComponent } from "../project-overview/project-overview.component";
+import { ProjectAccordionComponent } from "../project-accordion/project-accordion.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, CommonModule, RouterOutlet, RouterLink, RouterLinkActive, ProjectOverviewComponent],
+  imports: [HeaderComponent, CommonModule, RouterOutlet, RouterLink, RouterLinkActive, ProjectOverviewComponent, ProjectAccordionComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -31,5 +32,14 @@ export class HomeComponent {
         return project.skills.includes(skill);
       });
     }
+  }
+
+  displayFirstPartOnly(title: string) {
+    let parts = title.split(" - ");
+    return parts[0];
+  }
+
+  displayFirstImageOnly(imageArray: Link[]) {
+    return imageArray[0];
   }
 }
