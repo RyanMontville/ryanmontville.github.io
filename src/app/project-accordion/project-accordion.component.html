@@ -14,7 +14,9 @@
             <h2>{{project.title}}</h2>
             <p>{{project.date}}</p>
         </span>
-        <img [src]="displayFirstImage(project.screenshots)" [alt]="project.title" class="thumbnail" />
+        @if (!expand) {
+            <img [src]="displayFirstImage(project.screenshots)" [alt]="project.title" class="thumbnail" />
+        }
     </section>
 
     @if (expand) {

@@ -53,17 +53,17 @@ const canvasStats: Project = new Project(
     "Canvas Stats - An Angular App",
     "July 2024",
     ['Angular', 'Python', 'PostgreSQL', 'HTML', 'CSS', 'TypeScript'],
-    "<p>I created a web app to display statistics from <a href='https://canvas.fediverse.events'>canvas</a>. Users can view their individual statistics and overall event metrics, such as the most common colors and top pixel placement coordinates. I imported the SQL data into a PostgreSQL database, wrote functions with Psycopg2 to rank users and analyze their contributions, and used the Pillow library to generate various pixel-based images. The web app, built with Angular, serves data from CSV files, features a search function, and allows users to compare their 2024 stats with 2023. To maintain privacy within the fediverse, I used an alternate GitHub account for this project. I plan to update the app after each Canvas event.</p>",
+    "<p>I created a web app to display statistics from <a href='https://canvas.fediverse.events'>canvas</a>. Users can view their individual statistics and overall event metrics, such as the most common colors and top pixel placement coordinates. I imported the SQL data into a PostgreSQL database, wrote functions with Psycopg2 to rank users and analyze their contributions, and used the Pillow library to generate various pixel-based images. The web app, built with Angular, serves data from CSV files, features a search function, and allows users to compare their 2024 stats with 2023.</p>",
     [
-        new Link("The stats for the 2024 event", "https://raw.githubusercontent.com/TheRealMonte/therealmonte.github.io/main/screenshots/home.png"),
-        new Link("An example of a user's stats", "https://raw.githubusercontent.com/TheRealMonte/therealmonte.github.io/main/screenshots/user-view.png"),
-        new Link("An example of displaying the pixels placed by a user", "https://raw.githubusercontent.com/TheRealMonte/therealmonte.github.io/main/screenshots/user-pixels.png"),
-        new Link("An image of all the black pixels placed on the canvas", "https://raw.githubusercontent.com/TheRealMonte/therealmonte.github.io/main/screenshots/color-view.png")
+        new Link("The stats for the 2024 event", "https://raw.githubusercontent.com/RyanMontville/canvas-stats/main/screenshots/home.png"),
+        new Link("An example of a user's stats", "https://raw.githubusercontent.com/RyanMontville/canvas-stats/main/screenshots/user-view.png"),
+        new Link("An example of displaying the pixels placed by a user", "https://raw.githubusercontent.com/RyanMontville/canvas-stats/main/screenshots/user-pixels.png"),
+        new Link("An image of all the black pixels placed on the canvas", "https://raw.githubusercontent.com/RyanMontville/canvas-stats/main/screenshots/color-view.png")
     ],
     [
         new Link("Read More", "/read-more-canvas"),
-        new Link("Go to Canvas Stats", "https://therealmonte.github.io/"),
-        new Link("GitHub Repo", "https://github.com/TheRealMonte/therealmonte.github.io")
+        new Link("Go to Canvas Stats", "https://canvasstats.com/"),
+        new Link("GitHub Repo", "https://github.com/RyanMontville/canvas-stats")
     ]
 )
 
