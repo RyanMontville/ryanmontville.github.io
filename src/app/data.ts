@@ -186,6 +186,20 @@ const murphyLaw: Project = new Project(
     ]
 )
 
+const actualOlymipicRankings: Project = new Project(
+    "The Actual Olympic Medals Ranking - An Angular App",
+    "August 2024",
+    ['PostgreSQL', 'Python', 'Angular', 'TypeScript', 'HTML', 'CSS'],
+    "<p>I saw Sanjay Amirthraj tweeted that he created a website to ranked all of the countries not by the total number of medals, but by the total value of the medals. (You can check out his website <a href='https://olympics-better-rankings.vercel.app/' target='_blank'>here</a>). In the comments, several people were saying the countries should be ranked by the total medals won including every athlete on a team, so a team of 4 would add 4 medals to the total instead of 1. After finding a dataset that was more than just the medal totals, I created a database and used Python to calculate the ACTUAL Olympic rankings. My Angular app ranks the countries by the actual medal counts and allows you to expand each country to see all of the medals awarded and how many athletes on the team to add the the total count for that medal. I found the dataset on <a href='https://www.kaggle.com/datasets/piterfm/paris-2024-olympic-summer-games' target='_blank'>Kaggle</a> and used <a href='https://flagsapi.com/' target='_blank'>flagsapi.com</a> for the flag images.</p>",
+    [
+        new Link("The Actual Olympic Medal Ranking", "https://raw.githubusercontent.com/RyanMontville/actual-olympic-medals-ranking/main/screenshot.png")
+    ],
+    [
+        new Link("View the Rankings", "https://ryanmontville.com/actual-olympic-medals-ranking/"),
+        new Link("GitHub Repo", "https://github.com/RyanMontville/actual-olympic-medals-ranking")
+    ]
+)
+
 export const projectsData: Project[] = [
-    beeTracker, canvasStats, mazeGenerator,  unitConverter, triviaGame, goFish, myAdventureBlog, warCardGame, hangman, weatherBot, philyBrewery, murphyLaw
+    beeTracker, canvasStats, mazeGenerator, actualOlymipicRankings, unitConverter, triviaGame, goFish, myAdventureBlog, warCardGame, hangman, weatherBot, philyBrewery, murphyLaw
     ];

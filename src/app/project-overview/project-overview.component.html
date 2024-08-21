@@ -2,20 +2,21 @@
     <h2>{{project.title}} ({{project.date}})</h2>
     <div class="skills">
         @for (skill of project.skills; track skill) {
-            <img [src]="displayImg(skill)" [alt]="skill" [title]="skill" />
+        <img [src]="displayImg(skill)" [alt]="skill" [title]="skill" />
         }
-        <div [innerHTML]="project.description"></div>
-        <div class="screenshots">
-            @for (screenshot of project.screenshots; track screenshot) {
-                <a [href]="screenshot.linkURL">
-                    <img [src]="screenshot.linkURL" [alt]="screenshot.linkText" [title]="screenshot.linkText" />
-                </a>
-            }
-        </div>
-        <div class="links">
-            @for (link of project.links; track link) {
-                <a [href]="link.linkURL">{{link.linkText}}</a>
-            }
-        </div>
     </div>
+    <div [innerHTML]="project.description"></div>
+    <div class="screenshots">
+        @for (screenshot of project.screenshots; track screenshot) {
+        <a [href]="screenshot.linkURL">
+            <img [src]="screenshot.linkURL" [alt]="screenshot.linkText" [title]="screenshot.linkText" />
+        </a>
+        }
+    </div>
+    <div class="links">
+        @for (link of project.links; track link) {
+        <a [href]="link.linkURL">{{link.linkText}}</a>
+        }
+    </div>
+
 </article>

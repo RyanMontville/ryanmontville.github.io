@@ -30,6 +30,7 @@ export class ProjectOverviewComponent {
       case 'Turtle Graphics': { return "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/main/images/Turtle%20Grpahics.png"; }
       case 'Blazor': { return "https://img.shields.io/badge/Blazor-512BD4?logo=blazor&logoColor=fff&style=for-the-badge"; }
       case 'Flask': { return "https://img.shields.io/badge/Flask-58CC02?style=for-the-badge&logo=flask&logoColor=white"; }
+      case 'Node.js': { return "https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"; }
       case 'Intentionally Bad Design': { return "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/main/images/intbaddes.png"; }
       default: {return ""; break;}
     }
