@@ -20,7 +20,7 @@ export class ProjectOverviewComponent {
       case 'CSS': { return "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"; }
       case 'JavaScript': { return "https://img.shields.io/badge/JavaScript-141414?style=for-the-badge&logo=javascript&logoColor=F7DF1E"; }
       case 'TypeScript': { return "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"; }
-      case 'Spring Boot': { return "(https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot"; }
+      case 'Spring Boot': { return "https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot"; }
       case 'PostgreSQL': { return "https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white"; }
       case 'JSON': { return "https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white"; }
       case 'Vue.js': { return "https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D"; }
