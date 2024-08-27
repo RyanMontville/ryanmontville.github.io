@@ -4,7 +4,7 @@ const beeTracker: Project = new Project(
     "Beehive Tracker - A React.js App",
     "March 2023",
     ['Java', 'PostgreSQL', 'React.js', 'JSON', 'Spring Boot', 'HTML', 'CSS', 'JavaScript', 'Bootstrap'],
-    "<p>I created a web app for my parents, who are hobbyist beekeepers, that allows them to quickly and easily record the data from their inspections of the beehive. The purpose of the app is to help them track the health of the hive, its production, and finding possible patterns to predict future events. The app pulls weather data from <a href='https://open-meteo.com/'>Open metro's</a> api to be recorded in the inspection.</p>",
+    "<p>I created a web app for Monte's Own that can be used to track the health of bee hives. The app allows the user to quickly and easily record the data using their phone when the go to inspect the bee hives. The purpose of recording the inspections is to try to find patterns and possibly use the data from last year to predict what will happen this year. The app pulls weather data from <a href='https://open-meteo.com/'>Open metro's</a> api to be recorded in the inspection.</p>",
     [
         new Link("The homepage", "https://raw.githubusercontent.com/RyanMontville/bee-inspection/main/screenshots/bees-homepage.png"),
         new Link("Recording a frame", "https://raw.githubusercontent.com/RyanMontville/bee-inspection/main/screenshots/bees-inspection-frames.png"),
