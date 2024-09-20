@@ -163,7 +163,7 @@ const philyBrewery: Project = new Project(
     "Philadelphia Brewery Guide - A Vue.js App",
     "December 2022",
     ['Java', 'PostgreSQL', 'Spring Boot', 'JSON', 'Vue.js', 'JavaScript', 'HTML', 'CSS'],
-    "For our final capstone at Tech Elevator, my team was tasked with creating a brewery finder web app for the city of Philadelphia. The app allowed users and brewery owners to create an account. The app has a SQL database that stores the user info, breweries, beer, and reviews. The front end runs on Vue.js framework, with a REST API to complete the MCV.",
+    "<p>For our final capstone at Tech Elevator, my team was tasked with creating a brewery finder web app for the city of Philadelphia. The app allowed users and brewery owners to create an account. The app has a SQL database that stores the user info, breweries, beer, and reviews. The front end runs on Vue.js framework, with a REST API to complete the MCV.</p>",
     [
         new Link("User Home page", "https://raw.githubusercontent.com/RyanMontville/BreweryGuide/main/Screenshots/User_Homepage.png"),
         new Link("Brewery Page", "https://raw.githubusercontent.com/RyanMontville/BreweryGuide/main/Screenshots/Brewery_Detail_Page.png"),
