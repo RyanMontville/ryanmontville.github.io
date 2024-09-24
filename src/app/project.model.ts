@@ -15,3 +15,10 @@ export class Link {
         public linkURL: string
     ) {}
 }
+
+export class Tag {
+    constructor(
+        public type: string,
+        public content: string[]
+    ) {}
+}

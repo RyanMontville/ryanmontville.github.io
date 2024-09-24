@@ -1,0 +1,16 @@
+.article-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 670px) {
+    .article-header {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 671px) {
+    .article-title {
+        max-width: 60%;
+    }
+}
