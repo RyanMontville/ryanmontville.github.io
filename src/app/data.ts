@@ -36,7 +36,7 @@ const mazeGenerator: Project = new Project(
 const unitConverter: Project = new Project(
     "Unit Converter",
     "October 2023",
-    ['C#', 'Blazor'],
+    ['C#', 'Blazor', 'HYML', 'CSS'],
     "<p>I want to learn C# to see how it compares to Java. After taking a course, I created this app which uses Blazor for the front-end. The app can convert distances, weights, and temperatures.</p>",
     [
         new Link("Converting distances", "https://raw.githubusercontent.com/RyanMontville/unitconverter/main/screenshots/unit-distance.png"),
