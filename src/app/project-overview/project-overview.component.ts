@@ -33,7 +33,7 @@ export class ProjectOverviewComponent {
       case 'Node.js': { return "https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"; }
       case 'Intentionally Bad Design': { return "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/main/images/intbaddes.png"; }
       case 'MySQL': { return "https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"; }
-      case 'PHP': { return " 	https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"; }
+      case 'PHP': { return "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"; }
       default: {return ""; break;}
     }
   }
