@@ -3,7 +3,7 @@ import { Link, Project } from "./project.model";
 const beeTracker: Project = new Project(
     "Beehive Health Tracker",
     "March 2023",
-    ['Java', 'PostgreSQL', 'React.js', 'JSON', 'Spring Boot', 'HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    ['Java', 'PostgreSQL', 'React.js', 'JSON', 'Spring Boot', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'PHP'],
     "<p>I created a web app for Monte's Own that can be used to track the health of bee hives. The app allows the user to quickly and easily record the data using their phone when the go to inspect the bee hives. The purpose of recording the inspections is to try to find patterns and possibly use the data from last year to predict what will happen this year. The app pulls weather data from <a href='https://open-meteo.com/'>Open metro's</a> api to be recorded in the inspection.</p>",
     [
         new Link("The homepage", "https://raw.githubusercontent.com/RyanMontville/bee-inspection/main/screenshots/bees-homepage.png"),
@@ -200,6 +200,20 @@ const actualOlymipicRankings: Project = new Project(
     ]
 )
 
+const packingList: Project = new Project(
+    "Packing Lists",
+    "October 2024",
+    ['Angular', 'TypeScript', 'HTML', 'CSS', 'MySQL', 'PHP'],
+    "<p>A Angular web app built for MontesOwn.com that allows users to create packing lists for upcoming trips. The app uses a MySql database and a Fat-Free Framework php api to store the lists. The app uses local storage to store user tokens to allow multiple users that can be accessed across multiple devices without complicated user authentication and log in.</p>",
+    [
+        new Link("An example of a packing list", "https://raw.githubusercontent.com/RyanMontville/packing-list/refs/heads/main/screenshots/packing-list.png")
+    ],
+    [
+        new Link("View Live Demo", "https://ryanmontville.com/packing-list/"),
+        new Link("GitHub Repo", "https://github.com/RyanMontville/packing-list")
+    ]
+)
+
 export const projectsData: Project[] = [
-    beeTracker, canvasStats, mazeGenerator, actualOlymipicRankings, unitConverter, triviaGame, goFish, myAdventureBlog, warCardGame, hangman, weatherBot, philyBrewery, murphyLaw
+    beeTracker, canvasStats, mazeGenerator, packingList, actualOlymipicRankings, unitConverter, triviaGame, goFish, myAdventureBlog, warCardGame, hangman, weatherBot, philyBrewery, murphyLaw
     ];
