@@ -217,7 +217,7 @@ const packingList: Project = new Project(
 const rubiksTextGenerator: Project = new Project(
     "Rubik's Mosaic Text Generator",
     "March 2025",
-    ['Angular', 'TypeScript', 'HTML', 'CSS', 'HTML Canvas Graphics', 'Python', 'Pillow'],
+    ['Angular', 'TypeScript', 'HTML', 'CSS', 'HTML Canvas Graphics', 'Python', 'Python Pillow'],
     "<p>An Angular app that generates a guide image with text that can then be used to create a Rubik's Cube Mosaic. The app uses HTML Canvas Graphics to generate the images.</p>",
     [],
     [new Link("View Live Demo", "https://ryanmontville.com/rubiksTextGeneration/"),
