@@ -52,7 +52,7 @@ const unitConverter: Project = new Project(
 const canvasStats: Project = new Project(
     "Canvas Stats",
     "July 2024",
-    ['Angular', 'Python', 'PostgreSQL', 'HTML', 'CSS', 'TypeScript'],
+    ['Angular', 'Python', 'Python Pillow', 'PostgreSQL', 'HTML', 'CSS', 'TypeScript'],
     "<p>I created a web app to display statistics from <a href='https://canvas.fediverse.events'>canvas</a>. Users can view their individual statistics and overall event metrics, such as the most common colors and top pixel placement coordinates. I imported the SQL data into a PostgreSQL database, wrote functions with Psycopg2 to rank users and analyze their contributions, and used the Pillow library to generate various pixel-based images. The web app, built with Angular, serves data from CSV files, features a search function, and allows users to compare their 2024 stats with 2023.</p>",
     [
         new Link("The stats for the 2024 event", "https://raw.githubusercontent.com/RyanMontville/canvas-stats/main/screenshots/home.png"),
@@ -214,6 +214,16 @@ const packingList: Project = new Project(
     ]
 )
 
+const rubiksTextGenerator: Project = new Project(
+    "Rubik's Mosaic Text Generator",
+    "March 2025",
+    ['Angular', 'TypeScript', 'HTML', 'CSS', 'HTML Canvas Graphics', 'Python', 'Pillow'],
+    "<p>An Angular app that generates a guide image with text that can then be used to create a Rubik's Cube Mosaic. The app uses HTML Canvas Graphics to generate the images.</p>",
+    [],
+    [new Link("View Live Demo", "https://ryanmontville.com/rubiksTextGeneration/"),
+        new Link("GitHub Repo", "https://github.com/RyanMontville/rubiksTextGeneration")]
+)
+
 export const projectsData: Project[] = [
-    beeTracker, canvasStats, mazeGenerator, packingList, actualOlymipicRankings, unitConverter, triviaGame, goFish, myAdventureBlog, warCardGame, hangman, weatherBot, philyBrewery, murphyLaw
+    rubiksTextGenerator, mazeGenerator, beeTracker, packingList, actualOlymipicRankings, canvasStats, unitConverter, triviaGame, goFish, myAdventureBlog, warCardGame, hangman, weatherBot, philyBrewery, murphyLaw
     ];

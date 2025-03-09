@@ -34,6 +34,8 @@ export class ProjectOverviewComponent {
       case 'Intentionally Bad Design': { return "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/main/images/intbaddes.png"; }
       case 'MySQL': { return "https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white"; }
       case 'PHP': { return "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"; }
+      case 'Python Pillow': { return "" }
+      case 'HTML Canvas Graphics': { return "" }
       default: {return ""; break;}
     }
   }
