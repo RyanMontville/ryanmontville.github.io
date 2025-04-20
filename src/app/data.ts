@@ -239,5 +239,5 @@ const sayTheSameThing: Project = new Project(
 )
 
 export const projectsData: Project[] = [
-    rubiksTextGenerator, mazeGenerator, beeTracker, packingList, actualOlymipicRankings, canvasStats, unitConverter, triviaGame, goFish, myAdventureBlog, warCardGame, hangman, weatherBot, philyBrewery, murphyLaw
+    rubiksTextGenerator, mazeGenerator, beeTracker, sayTheSameThing, packingList, actualOlymipicRankings, canvasStats, unitConverter, triviaGame, goFish, myAdventureBlog, warCardGame, hangman, weatherBot, philyBrewery, murphyLaw
     ];
