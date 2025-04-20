@@ -224,6 +224,20 @@ const rubiksTextGenerator: Project = new Project(
         new Link("GitHub Repo", "https://github.com/RyanMontville/rubiksTextGeneration")]
 )
 
+const sayTheSameThing: Project = new Project(
+    "Say the Same Thing",
+    "April 2025",
+    ['Angular', 'TypeScript', 'HTML', 'CSS'],
+    "<p>A game were 2 players try to say the same thing. At the end of each round, the app generates an url that you share with the other player so they can play the next round. The app uses url query parameters and local storage to keep track of the round info such as the round number, the last two words entered and the other players most recent word.</p>",
+    [new Link("Entering in a word", "https://raw.githubusercontent.com/RyanMontville/same-word/refs/heads/main/screenshots/wrong.png"),
+        new Link("The screen to copy the message and url to share", "https://raw.githubusercontent.com/RyanMontville/same-word/refs/heads/main/screenshots/share.png"),
+        new Link("Game finished screen", "https://raw.githubusercontent.com/RyanMontville/same-word/refs/heads/main/screenshots/correct.png")
+    ],
+    [new Link("Play the game", "https://ryanmontville.com/same-word/"),
+        new Link("GitHub Repo", "https://github.com/RyanMontville/same-word")
+    ]
+)
+
 export const projectsData: Project[] = [
     rubiksTextGenerator, mazeGenerator, beeTracker, packingList, actualOlymipicRankings, canvasStats, unitConverter, triviaGame, goFish, myAdventureBlog, warCardGame, hangman, weatherBot, philyBrewery, murphyLaw
     ];
