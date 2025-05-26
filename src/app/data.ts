@@ -1,10 +1,10 @@
 import { Link, Project } from "./project.model";
 
 const beeTracker: Project = new Project(
-    "Beehive Health Tracker",
-    "March 2023",
+    "BuzzNote",
+    "May 2025",
     ['Java', 'PostgreSQL', 'React.js', 'JSON', 'Spring Boot', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'PHP'],
-    "<p>I created a web app for Monte's Own that can be used to track the health of bee hives. The app allows the user to quickly and easily record the data using their phone when the go to inspect the bee hives. The purpose of recording the inspections is to try to find patterns and possibly use the data from last year to predict what will happen this year. The app pulls weather data from <a href='https://open-meteo.com/'>Open metro's</a> api to be recorded in the inspection.</p>",
+    "<p>I created a web app for Monte's Own that can be used to track the health of bee hives. The app allows the user to quickly and easily record the data using their phone when the go to inspect the bee hives. The purpose of recording the inspections is to try to find patterns and possibly use the data from last year to predict what will happen this year. The app pulls weather data from <a href='https://open-meteo.com/'>Open metro's</a> api to be recorded in the inspection. You can also view version 1 of the app (created March 2023) <a href='https://github.com/RyanMontville/buzz-note-v1'>here</a></p>",
     [
         new Link("The homepage", "https://raw.githubusercontent.com/RyanMontville/bee-inspection/main/screenshots/bees-homepage.png"),
         new Link("Recording a frame", "https://raw.githubusercontent.com/RyanMontville/bee-inspection/main/screenshots/bees-inspection-frames.png"),
@@ -13,8 +13,8 @@ const beeTracker: Project = new Project(
         new Link("Search Page", "https://raw.githubusercontent.com/RyanMontville/bee-inspection/main/screenshots/bees-search.png")
     ],
     [
-        new Link("View Live Demo", "https://ryanmontville.github.io/bee-inspection/"),
-        new Link("GitHub Repo", "https://github.com/RyanMontville/Bee-Inspection")
+        new Link("View Live Demo", "https://ryanmontville.com/buzz-note-v2/"),
+        new Link("GitHub Repo", "https://github.com/RyanMontville/buzz-note-v2")
     ]
 )
 const mazeGenerator: Project = new Project(
