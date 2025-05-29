@@ -53,3 +53,8 @@ nav a:hover,
 #mobile-menu a {
     font-size: 25px;
 }
+
+.theme-toggle-button {
+    background-color: transparent;
+    border: 0;
+}

@@ -1,6 +1,22 @@
 @import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
+:root {
+        --body-background: #e5e5e5;
+        --header-background: #b81f24;
+        --nav-background: #808080;
+        --nav-color: #fff;
+        --header-color: #ffffff;
+        --header-title: #ffffff;
+        --main-background: #ffffff;
+        --main-headings: #b81f24;
+        --main-color: #000000;
+        --main-link: #302ae6;
+        --dark-mode-icon: #ffffff;
+        --project-divider: #000;
+        --links-background: #b81f24;
+    }
+
 @media (prefers-color-scheme: dark) {
     :root {
         --body-background: #000000;
@@ -17,23 +33,40 @@
         --links-background: #000000;
     }
 }
-@media (prefers-color-scheme: light) {
-    :root {
-        --body-background: #e5e5e5;
-        --header-background: #b81f24;
-        --nav-background: #808080;
-        --nav-color: #fff;
-        --header-color: #ffffff;
-        --header-title: #ffffff;
-        --main-background: #ffffff;
-        --main-headings: #b81f24;
-        --main-color: #000000;
-        --main-link: #302ae6;
-        --dark-mode-icon: #ffffff;
-        --project-divider: #000;
-        --links-background: #b81f24;
-    }
+
+/* Explicit Light Mode (User Override) */
+html.light-mode {
+    --body-background: #e5e5e5;
+    --header-background: #b81f24;
+    --nav-background: #808080;
+    --nav-color: #fff;
+    --header-color: #ffffff;
+    --header-title: #ffffff;
+    --main-background: #ffffff;
+    --main-headings: #b81f24;
+    --main-color: #000000;
+    --main-link: #302ae6;
+    --dark-mode-icon: #ffffff;
+    --project-divider: #000;
+    --links-background: #b81f24;
 }
+
+/* Explicit Dark Mode (User Override) */
+html.dark-mode {
+    --body-background: #000000;
+    --header-background: #333;
+    --nav-background: #404040;
+    --nav-color: #ccc;
+    --header-title: #b81f24;
+    --header-color: #ccc;
+    --main-background: #333;
+    --main-color: #ccc;
+    --main-link: #9a97f3;
+    --dark-mode-icon: #b81f24;
+    --project-divider: #fff;
+    --links-background: #000000;
+}
+
 * {
     padding: 0;
     margin: 0;

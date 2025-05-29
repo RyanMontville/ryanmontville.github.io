@@ -6,11 +6,11 @@ const beeTracker: Project = new Project(
     ['Java', 'PostgreSQL', 'React.js', 'JSON', 'Spring Boot', 'HTML', 'CSS', 'JavaScript', 'Bootstrap', 'PHP'],
     "<p>I created a web app for Monte's Own that can be used to track the health of bee hives. The app allows the user to quickly and easily record the data using their phone when the go to inspect the bee hives. The purpose of recording the inspections is to try to find patterns and possibly use the data from last year to predict what will happen this year. The app pulls weather data from <a href='https://open-meteo.com/'>Open metro's</a> api to be recorded in the inspection. You can also view version 1 of the app (created March 2023) <a href='https://github.com/RyanMontville/buzz-note-v1'>here</a></p>",
     [
-        new Link("The homepage", "https://raw.githubusercontent.com/RyanMontville/bee-inspection/main/screenshots/bees-homepage.png"),
-        new Link("Recording a frame", "https://raw.githubusercontent.com/RyanMontville/bee-inspection/main/screenshots/bees-inspection-frames.png"),
-        new Link("End of inspection", "https://raw.githubusercontent.com/RyanMontville/bee-inspection/main/screenshots/bees-past-inspections.png"),
-        new Link("Viewing a past inspection", "https://raw.githubusercontent.com/RyanMontville/bee-inspection/main/screenshots/bees-past-inspections.png"),
-        new Link("Search Page", "https://raw.githubusercontent.com/RyanMontville/bee-inspection/main/screenshots/bees-search.png")
+        new Link("The homepage", "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/homepage.png"),
+        new Link("Recording a frame", "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/adding-a-frame.png"),
+        new Link("End of inspection", "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/end-of-inspection.png"),
+        new Link("Viewing a past inspection", "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/view-past-inspection.png"),
+        new Link("Managing a hive", "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/manage-hives.png")
     ],
     [
         new Link("View Live Demo", "https://ryanmontville.com/buzz-note-v2/"),
