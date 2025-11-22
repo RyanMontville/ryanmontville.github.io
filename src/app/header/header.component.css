@@ -57,4 +57,5 @@ nav a:hover,
 .theme-toggle-button {
     background-color: transparent;
     border: 0;
+    cursor: pointer;
 }

@@ -7,13 +7,13 @@
 </div>
 
 <nav id="large-screens">
-    <a routerLink="/about">About<span class="full-text"> Me</span></a>
-    <a routerLink="/">Portfolio</a>
-    <a href="https://ryanmontville.github.io/disney/">My Adventure Blog</a>
+    <a routerLink="/about" title="About Me">About<span class="full-text"> Me</span></a>
+    <a routerLink="/" title="Portfolio">Portfolio</a>
+    <a href="https://ryanmontville.github.io/disney/" title="My Adventure Blog">My Adventure Blog</a>
     <a href="https://www.github.com/RyanMontville" title="GitHub" target="blank">GitHub</a>
     <a href="https://www.linkedin.com/in/ryanmontville" title="LinkedIn" target="blank">LinkedIn</a>
     <a href="https://www.instagram.com/ryanmontville/" title="Instagram" target="blank">Instagram</a>
-    <button (click)="toggleTheme()" class="theme-toggle-button">
+    <button (click)="toggleTheme()" class="theme-toggle-button" title="{{currentTheme == 'light_mode' ? 'Switch to dark mode': 'Switch to light mode'}}">
         <span class="material-symbols-outlined">
             {{ currentTheme }}
         </span>
