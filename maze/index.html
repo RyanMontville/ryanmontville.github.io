@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="thumbnail" content="../images/main.png" />
+    <meta property="og:title" content="Ryan Montville" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ryanmontville.com/" />
+    <meta property="og:image" content="../images/main.png" />
+    <meta name="description" property="og:description" content="Software Developer | Book Worm | Former Cast Member">
+    <meta name="author" content="Ryan Montville">
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='theme-color' content='#b81f24'>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel='icon' sizes='192x192' href='../images/android-chrome-192x192.png'>
+    <meta name='msapplication-square310x310logo' content='../images/favicon-310x310.png'>
+    <link href="../src/css/style.css" rel="stylesheet" />
+    <link href="../src/css/carousel.css" rel="stylesheet" />
+    <title>Ryan Montville</title>
+    <link rel="prefetch" href="images/main.png" />
+</head>
+
+<body>
+    <button id="mobile-nav-toggle" aria-label="Toggle navigation menu" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <div id="page-wrapper">
+        <div id="header-placeholder"></div>
+        <main>
+            <article id="loading-card" class="card">
+                <div class="loader"></div>
+                <h2>Loading...</h2>
+            </article>
+            <article id="page-content" class="card hide">
+                <h2>Python Maze Generator</h2>
+                <p>I wanted to try to use <a href="https://docs.python.org/3/library/turtle.html" target="_blank">Turtle Graphics</a> to
+                    randomly generate mazes using python. I still consider this project a work in progress because I
+                    have not
+                    yet achieved the level of randomness that I imagined when I started this project.</p>
+                <p>For my first attempt, I created a grid and then had the program randomly draw lines on the grid. It
+                    Kinda
+                    looks like a maze at first glance, but the paths are not continuous and most of the time it is
+                    impossible to
+                    go from the start of the maze to the finish. You can see an example of the random lines below. It
+                    was a good
+                    experiment at what randomly drawing lines can do, but I knew I could do better.</p>
+                <div id="version-one-screenshots"></div>
+                <div class="links"><a href="demo.html?version=1">Run the Version 1 generator</a></div>
+                <hr />
+                <p>Next, I decided to draw a few different patterns. Some of the patterns could vary in width and
+                    height, while other patterns randomly decieded which paths were dead-ends and which paths would lead
+                    you into the next section of the maze. It still wasn't as random as I was hoping for, but it was
+                    good progress. With the amount of random decisions the program made, even though the maze will look
+                    similar overall each time it is generated, the path from start to finish will always be different. I
+                    knew I could still do better.</p>
+                <div id="version-two-screenshots"></div>
+                <div class="links"><a href="demo.html?version=2">Run the Version 2 generator</a></div>
+                <hr />
+                <p>While looking at mazes online, I found a maze generator that could generate mazes in several
+                    different patterns, including mazes that aren't just rectangular. One of the mazes was in an "X"
+                    pattern, which gave me the idea to try to make a generator where you could type a word or phrase and
+                    have a maze generated with the letters making up the maze. I started planning by drawing the
+                    letters, then taking screenshots of the letters into Photoshop to draw the paths around and through
+                    the letters. Each letter is a function that takes the coordinates of the top-left corner of the
+                    letter segment and whether the path into the segment from the last segment is on the top or bottom.
+                    Every letter randomly chooses whether you exit the segment through the top or bottom and passes it
+                    on to the next segment. Some letters generate different paths depending on if you enter from the top
+                    or the bottom. Some letters randomly decide which paths will be dead-ends while other letters always
+                    have the same paths through the segment. While this version of the maze generator is different from
+                    my plan when I started this project, I am happy with how it turned out.</p>
+                    <div id="version-three-screenshots"></div>
+                <div class="links"><a href="demo.html?version=3">Run the Version 3 generator</a></div>
+                <p>I still want to attempt to create a generator that draws mazes that are so random that I have never
+                    seen before and would have no clue how to solve the maze without tracing out the paths.</p>
+            </article>
+        </main>
+    </div>
+    <script type="module" src="../dist/maze.js"></script>
+</body>
+
+</html>
