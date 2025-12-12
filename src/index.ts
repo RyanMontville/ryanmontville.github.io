@@ -38,15 +38,15 @@ function createFilterSelect() {
 }
 
 function setSkillSelected(skill: string) {
-    const filterSElectElem = document.getElementById('filter-select') as HTMLSelectElement | null;
-    if (filterSElectElem) {
-        const selectedIndex = filterSElectElem.selectedIndex;
-        const selectedSkill = filterSElectElem.options[selectedIndex];
+    const filterSelectElem = document.getElementById('filter-select') as HTMLSelectElement | null;
+    if (filterSelectElem) {
+        const selectedIndex = filterSelectElem.selectedIndex;
+        const selectedSkill = filterSelectElem.options[selectedIndex];
         selectedSkill.selected = false;
-        const l = filterSElectElem.options.length;
+        const l = filterSelectElem.options.length;
         for (let i = 0; i < l; i++) {
-            if (filterSElectElem.options[i].value === skill) {
-                filterSElectElem.options[i].selected = true;
+            if (filterSelectElem.options[i].value === skill) {
+                filterSelectElem.options[i].selected = true;
             }
         }
     }
