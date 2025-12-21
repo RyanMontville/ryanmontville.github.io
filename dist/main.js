@@ -1,3 +1,4 @@
+import { g } from "./goto.js";
 const pageWrapper = document.getElementById('page-wrapper');
 export async function initializeApp(currentPage) {
     if (currentPage !== "") {
@@ -14,6 +15,12 @@ export async function initializeApp(currentPage) {
         }
     });
     await loadHeader(currentPage);
+    const urlParams = new URLSearchParams(window.location.search);
+    const end = urlParams.get('goto');
+    if (end) {
+        console.log("found");
+        g(end);
+    }
     const mobileNavToggle = document.getElementById('mobile-nav-toggle');
     const nav = document.querySelector('nav');
     const body = document.querySelector('body');
