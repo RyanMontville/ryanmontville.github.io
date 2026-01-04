@@ -38,12 +38,12 @@
     "links": [
       {
         "linkText": "View Live Demo",
-        "linkURL": "https://ryanmontville.com/buzz-note-v2/",
+        "linkURL": "https://ryanmontville.com/buzz-note-v3/",
         "external": false
       },
       {
         "linkText": "GitHub Repo",
-        "linkURL": "https://github.com/RyanMontville/buzz-note-v2",
+        "linkURL": "https://github.com/RyanMontville/buzz-note-v3",
         "external": true
       }
     ]
