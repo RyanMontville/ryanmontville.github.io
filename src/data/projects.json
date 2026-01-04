@@ -1,5 +1,54 @@
 [
   {
+    "projectTitle": "BuzzNote 3.0",
+    "datePublished": "January 04, 2026",
+    "skills": [
+      "TypeScript",
+      "Firebase",
+      "MySQL",
+      "JSON",
+      "HTML",
+      "CSS",
+      "PHP",
+      "Vite"
+    ],
+    "description": "<p>I created a web app for Monte's Own that can be used to track the health of bee hives. The app allows the user to quickly and easily record the data using their phone when the go to inspect the bee hives. The purpose of recording the inspections is to try to find patterns and possibly use the data from last year to predict what will happen this year. The app pulls weather data from <a href='https://open-meteo.com/'>Open metro's</a> api to be recorded in the inspection. You can also view <a href='https://github.com/RyanMontville/buzz-note-v2'>version 2</a> (updated May 2025) or <a href='https://github.com/RyanMontville/buzz-note-v1'>version 1</a> (created March 2023)</p>",
+    "screenshots": [
+      {
+        "linkText": "The homepage",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/homepage.png"
+      },
+      {
+        "linkText": "Recording a frame",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/adding-a-frame.png"
+      },
+      {
+        "linkText": "End of inspection",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/end-of-inspection.png"
+      },
+      {
+        "linkText": "Viewing a past inspection",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/view-past-inspection.png"
+      },
+      {
+        "linkText": "Managing a hive",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/manage-hives.png"
+      }
+    ],
+    "links": [
+      {
+        "linkText": "View Live Demo",
+        "linkURL": "https://ryanmontville.com/buzz-note-v2/",
+        "external": false
+      },
+      {
+        "linkText": "GitHub Repo",
+        "linkURL": "https://github.com/RyanMontville/buzz-note-v2",
+        "external": true
+      }
+    ]
+  },
+  {
     "projectTitle": "Rubik's Mosaic Text Generator",
     "datePublished": "March 01, 2025",
     "skills": [
@@ -57,57 +106,6 @@
       {
         "linkText": "GitHub Repo",
         "linkURL": "https://github.com/RyanMontville/pythonmaze",
-        "external": true
-      }
-    ]
-  },
-  {
-    "projectTitle": "BuzzNote",
-    "datePublished": "May 01, 2025",
-    "skills": [
-      "Java",
-      "PostgreSQL",
-      "React.js",
-      "JSON",
-      "Spring Boot",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Bootstrap",
-      "PHP"
-    ],
-    "description": "<p>I created a web app for Monte's Own that can be used to track the health of bee hives. The app allows the user to quickly and easily record the data using their phone when the go to inspect the bee hives. The purpose of recording the inspections is to try to find patterns and possibly use the data from last year to predict what will happen this year. The app pulls weather data from <a href='https://open-meteo.com/'>Open metro's</a> api to be recorded in the inspection. You can also view version 1 of the app (created March 2023) <a href='https://github.com/RyanMontville/buzz-note-v1'>here</a></p>",
-    "screenshots": [
-      {
-        "linkText": "The homepage",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/homepage.png"
-      },
-      {
-        "linkText": "Recording a frame",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/adding-a-frame.png"
-      },
-      {
-        "linkText": "End of inspection",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/end-of-inspection.png"
-      },
-      {
-        "linkText": "Viewing a past inspection",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/view-past-inspection.png"
-      },
-      {
-        "linkText": "Managing a hive",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/buzz-note-v2/refs/heads/main/screenshots/manage-hives.png"
-      }
-    ],
-    "links": [
-      {
-        "linkText": "View Live Demo",
-        "linkURL": "https://ryanmontville.com/buzz-note-v2/",
-        "external": false
-      },
-      {
-        "linkText": "GitHub Repo",
-        "linkURL": "https://github.com/RyanMontville/buzz-note-v2",
         "external": true
       }
     ]

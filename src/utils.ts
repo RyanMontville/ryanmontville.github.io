@@ -42,6 +42,8 @@ export function getSkillImage(skill: string): string {
     case 'PHP': { return "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"; }
     case 'Python Pillow': { return "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/pillow.png" }
     case 'HTML Canvas Graphics': { return "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/htmlcanvas.png" }
+    case 'Firebase': { return "https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black" }
+    case 'Vite': { return "https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white" }
     default: { return ""; break; }
   }
 }
@@ -114,7 +116,6 @@ export function createImageCarousel(images: Link[]): HTMLDivElement {
   content.setAttribute('class', 'carousel-content');
   const screenshot = document.createElement('img');
   const screenshotDescriptionP = document.createElement('p');
-
   //Core Update Function
   const updateCarousel = () => {
     const currentImage = images[imageIndex];

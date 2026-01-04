@@ -86,6 +86,12 @@ export function getSkillImage(skill) {
         case 'HTML Canvas Graphics': {
             return "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/htmlcanvas.png";
         }
+        case 'Firebase': {
+            return "https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black";
+        }
+        case 'Vite': {
+            return "https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white";
+        }
         default: {
             return "";
             break;
