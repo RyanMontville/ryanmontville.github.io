@@ -80,7 +80,6 @@ function populateFilterBar(filterBarElement: HTMLElement) {
 }
 
 
-
 function displayProjects() {
     const filterBar = document.getElementById('filter-bar');
     if (!filterBar) {

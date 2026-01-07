@@ -49,6 +49,42 @@
     ]
   },
   {
+    "projectTitle": "Days For Girls Inventory",
+    "datePublished": "December 18, 2025",
+    "skills": ["TypeScript", "Firebase", "Vite", "HTML", "CSS"],
+    "description": "A progressive web app built from scratch using TypeScript, Vite, and Firebase. This app was created as part of my Masters degree at Loyola University of Chicago for the Solon Ohio Days for Girls team to track their inventory and provide information on their current projects and events. The app uses Firebase for both user authentication and data storage.",
+    "screenshots": [
+      {
+        "linkText": "The homepage",
+        "linkURL": "https://raw.githubusercontent.com/ryan-montville/days-for-girls-solon/refs/heads/main/screenshots/home.png"
+      },
+      {
+        "linkText": "A view of the current inventory",
+        "linkURL": "https://raw.githubusercontent.com/ryan-montville/days-for-girls-solon/refs/heads/main/screenshots/current-inventory.png"
+      },
+      {
+        "linkText": "Donating items to the inventory",
+        "linkURL": "https://raw.githubusercontent.com/ryan-montville/days-for-girls-solon/refs/heads/main/screenshots/donate-items-modal.png"
+      },
+      {
+        "linkText": "A generated inventory report",
+        "linkURL": "https://raw.githubusercontent.com/ryan-montville/days-for-girls-solon/refs/heads/main/screenshots/inventory-report.png"
+      }
+    ],
+    "links": [
+      {
+        "linkText": "View Live Demo",
+        "linkURL": "https://ryan-montville.github.io/days-for-girls-solon/",
+        "external": false
+      },
+      {
+        "linkText": "GitHub Repo",
+        "linkURL": "https://github.com/ryan-montville/days-for-girls-solon",
+        "external": true
+      }
+    ]
+  },
+  {
     "projectTitle": "Rubik's Mosaic Text Generator",
     "datePublished": "March 01, 2025",
     "skills": [
