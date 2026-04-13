@@ -43,12 +43,10 @@ async function getData() {
 function lastStep(u) {
     window.location.href = u;
 }
-//
 export async function g(end) {
     console.log("g running");
     const pairs = await getData();
     const encodedKey = encode(end);
-    console.log(encodedKey);
     if (pairs) {
         const found = pairs.find(pair => pair['contentKey'] === encodedKey);
         if (found) {

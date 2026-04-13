@@ -19,7 +19,6 @@ export async function initializeApp(currentPage: string) {
     const urlParams = new URLSearchParams(window.location.search);
     const end = urlParams.get('goto');
     if (end) {
-        console.log("found");
         g(end);
     }
     const mobileNavToggle = document.getElementById('mobile-nav-toggle') as HTMLElement;

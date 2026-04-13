@@ -1,5 +1,4 @@
 import { ContentPair } from "./models";
-import { loadData } from "./utils";
 
 function decode(encodedString: string) {
     try {
@@ -47,12 +46,11 @@ function lastStep(u: string) {
     window.location.href = u;
 }
 
-//
+
 export async function g(end: string) {
     console.log("g running")
     const pairs = await getData();
     const encodedKey = encode(end);
-    console.log(encodedKey);
     if (pairs) {
         const found = pairs.find(pair => pair['contentKey'] === encodedKey);
         if (found) {
