@@ -249,15 +249,15 @@
     "projectTitle": "Canvas Stats",
     "datePublished": "July 01, 2024",
     "skills": [
-      "Angular",
+      "TypeScript",
+      "Vite",
       "Python",
       "Python Pillow",
       "PostgreSQL",
       "HTML",
-      "CSS",
-      "TypeScript"
+      "CSS"
     ],
-    "description": "<p>I created a web app to display statistics from <a href='https://canvas.fediverse.events'>canvas</a>. Users can view their individual statistics and overall event metrics, such as the most common colors and top pixel placement coordinates. I imported the SQL data into a PostgreSQL database, wrote functions with Psycopg2 to rank users and analyze their contributions, and used the Pillow library to generate various pixel-based images. The web app, built with Angular, serves data from CSV files, features a search function, and allows users to compare their stats to previous years.</p>",
+    "description": "<p>I created a web app to display statistics from <a href='https://canvas.fediverse.events'>canvas</a>. Users can view their individual statistics and overall event metrics, such as the most common colors and top pixel placement coordinates. I imported the SQL data into a PostgreSQL database, wrote functions with Psycopg2 to rank users and analyze their contributions, and used the Pillow library to generate various pixel-based images. The web app, built with Typescript and Vite, serves data from CSV files, features a search function, and allows users to compare their stats to previous years.</p>",
     "screenshots": [
       {
         "linkText": "The stats for the 2024 event",
