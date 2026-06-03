@@ -5,12 +5,11 @@
     "skills": [
       "TypeScript",
       "Firebase",
-      "MySQL",
       "JSON",
       "HTML",
       "CSS",
-      "PHP",
-      "Vite"
+      "Vite",
+      "D3.js"
     ],
     "description": "<p>I created a web app for Monte's Own that can be used to track the health of bee hives. The app allows the user to quickly and easily record the data using their phone when the go to inspect the bee hives. The purpose of recording the inspections is to try to find patterns and possibly use the data from last year to predict what will happen this year. The app pulls weather data from <a href='https://open-meteo.com/'>Open metro's</a> api to be recorded in the inspection. You can also view <a href='https://github.com/RyanMontville/buzz-note-v2'>version 2</a> (updated May 2025) or <a href='https://github.com/RyanMontville/buzz-note-v1'>version 1</a> (created March 2023)</p>",
     "screenshots": [
