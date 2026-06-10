@@ -1,5 +1,53 @@
 [
   {
+    "projectTitle": "Canvas Stats",
+    "datePublished": "June 10, 2026",
+    "skills": [
+      "TypeScript",
+      "Vite",
+      "Python",
+      "Python Pillow",
+      "PostgreSQL",
+      "HTML",
+      "CSS"
+    ],
+    "description": "<p>I created a web app to display statistics from <a href='https://canvas.fediverse.events'>canvas</a>. Users can view their individual statistics and overall event metrics, such as the most common colors and top pixel placement coordinates. I imported the SQL data into a PostgreSQL database, wrote functions with Psycopg2 to rank users and analyze their contributions, and used the Pillow library to generate various pixel-based images. The web app, built with Typescript and Vite, serves data from CSV files, features a search function, and allows users to compare their stats to previous years.</p>",
+    "screenshots": [
+      {
+        "linkText": "The homepage displaying the 2025 stats",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-home.png"
+      },
+      {
+        "linkText": "Displaying the Canvas 2025 final image",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-final-2025.png"
+      },
+      {
+        "linkText": "An image of all the red pixels placed on the canvas in 2025",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-red.png"
+      },
+      {
+        "linkText": "An example of a user's stats",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-user.png"
+      },
+      {
+        "linkText": "An example of displaying the pixels placed by a user",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-user-pixels.png"
+      }
+    ],
+    "links": [
+      {
+        "linkText": "Go to Canvas Stats",
+        "linkURL": "https://canvasstats.com/",
+        "external": true
+      },
+      {
+        "linkText": "GitHub Repo",
+        "linkURL": "https://github.com/CanvasStats/main",
+        "external": true
+      }
+    ]
+  },
+  {
     "projectTitle": "BuzzNote 3.0",
     "datePublished": "January 04, 2026",
     "skills": [
@@ -240,54 +288,6 @@
       {
         "linkText": "GitHub Repo",
         "linkURL": "https://github.com/RyanMontville/actual-olympic-medals-ranking",
-        "external": true
-      }
-    ]
-  },
-  {
-    "projectTitle": "Canvas Stats",
-    "datePublished": "July 01, 2024",
-    "skills": [
-      "TypeScript",
-      "Vite",
-      "Python",
-      "Python Pillow",
-      "PostgreSQL",
-      "HTML",
-      "CSS"
-    ],
-    "description": "<p>I created a web app to display statistics from <a href='https://canvas.fediverse.events'>canvas</a>. Users can view their individual statistics and overall event metrics, such as the most common colors and top pixel placement coordinates. I imported the SQL data into a PostgreSQL database, wrote functions with Psycopg2 to rank users and analyze their contributions, and used the Pillow library to generate various pixel-based images. The web app, built with Typescript and Vite, serves data from CSV files, features a search function, and allows users to compare their stats to previous years.</p>",
-    "screenshots": [
-      {
-        "linkText": "The homepage displaying the 2025 stats",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-home.png"
-      },
-      {
-        "linkText": "Displaying the Canvas 2025 final image",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-final-2025.png"
-      },
-      {
-        "linkText": "An image of all the red pixels placed on the canvas in 2025",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-red.png"
-      },
-      {
-        "linkText": "An example of a user's stats",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-user.png"
-      },
-      {
-        "linkText": "An example of displaying the pixels placed by a user",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-user-pixels.png"
-      }
-    ],
-    "links": [
-      {
-        "linkText": "Go to Canvas Stats",
-        "linkURL": "https://canvasstats.com/",
-        "external": true
-      },
-      {
-        "linkText": "GitHub Repo",
-        "linkURL": "https://github.com/CanvasStats/main",
         "external": true
       }
     ]
