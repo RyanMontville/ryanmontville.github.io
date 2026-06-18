@@ -51,7 +51,50 @@ body.no-scroll-fixed {
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Still needed to prevent scroll on the body itself */
+    overflow: hidden;
+}
+
+#tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+}
+
+#tabs button {
+    background-color: var(--main-background);
+    color: var(--main-color);
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#tabs button:hover {
+    color: #b81f24;
+    border-color: #d1d5db;
+    box-shadow:
+        0 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#tabs button.active {
+    background-color: var(--header-background);
+    color: #ffffff;
+    border-color: #b81f24;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .material-symbols-outlined {
@@ -364,8 +407,8 @@ button {
         opacity: 1;
         visibility: visible;
         box-shadow:
-        0 3px 6px rgba(0, 0, 0, 0.16),
-        0 3px 6px rgba(0, 0, 0, 0.23);
+            0 3px 6px rgba(0, 0, 0, 0.16),
+            0 3px 6px rgba(0, 0, 0, 0.23);
     }
 
     main {

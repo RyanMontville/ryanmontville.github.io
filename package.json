@@ -1,20 +1,16 @@
 {
-  "name": "ryan-montville-portfolio",
-  "version": "1.0.0",
-  "description": "",
-  "main": "dist/main.js",
+  "name": "ryan-montville",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch",
-    "start": "npm run watch"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "author": "Ryan Montville",
-  "license": "ISC",
   "devDependencies": {
-    "@types/d3": "^7.4.3",
-    "typescript": "^5.9.3"
-  },
-  "dependencies": {
-    "d3": "^7.9.0"
+    "@types/node": "^25.9.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12"
   }
 }

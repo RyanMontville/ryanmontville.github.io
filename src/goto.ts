@@ -1,4 +1,4 @@
-import { ContentPair } from "./models";
+import type { ContentPair } from "./models";
 
 function decode(encodedString: string) {
     try {

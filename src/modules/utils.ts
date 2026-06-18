@@ -1,4 +1,4 @@
-import { ContentPair, Link, ParagraphBlock } from "./models";
+import type { ContentPair, Link, ParagraphBlock } from "../models";
 
 export function fixDate(dateString: string, dateFormat: string) {
   let dateObj: Date = new Date(dateString);
@@ -65,11 +65,13 @@ export function createParagraph(content: ParagraphBlock) {
         const partI = document.createElement('i');
         partI.textContent = part['contentValue'];
         acc.appendChild(partI);
+        break;
       default:
         const partLink = document.createElement('a');
         partLink.setAttribute('href', part['contentKey']);
         partLink.textContent = part['contentValue']
         acc.appendChild(partLink);
+        break;
     }
     return acc;
   }, document.createElement('p'));
@@ -170,7 +172,7 @@ export function createImageCarousel(images: Link[]): HTMLDivElement {
     const dots = document.createElement('section');
     dots.setAttribute('class', "dots");
     images.forEach((currentImage, index) => {
-      const dot = createButton('button', null, 'dot', `${index + 1}`, null);
+      const dot = createButton('button', currentImage.linkText, 'dot', `${index + 1}`, null);
       //Set initial active class
       if (index === imageIndex) {
         dot.classList.add('active');
@@ -184,4 +186,14 @@ export function createImageCarousel(images: Link[]): HTMLDivElement {
     carouselContainer.appendChild(dots);
   }
   return carouselContainer;
+}
+
+export function makeElement(elementType: string, elementId: string | null, elementClass: string | null, elementText: string | null) {
+  const newElement = document.createElement(elementType);
+  if (elementId) newElement.setAttribute('id', elementId);
+  if (elementClass) {
+    newElement.setAttribute('class', elementClass);
+  }
+  if (elementText) newElement.textContent = elementText;
+  return newElement;
 }

@@ -1,49 +1,37 @@
-[
-  {
-    "projectTitle": "Canvas Stats",
-    "datePublished": "June 10, 2026",
-    "skills": [
-      "TypeScript",
-      "Vite",
-      "D3.js",
-      "Python",
-      "Python Pillow",
-      "PostgreSQL",
-      "HTML",
-      "CSS"
-    ],
-    "description": "<p>I created a web app to display statistics from <a href='https://canvas.fediverse.events'>canvas</a>. Users can view their individual statistics and overall event metrics, such as the most common colors and top pixel placement coordinates. I imported the SQL data into a PostgreSQL database, wrote functions with Psycopg2 to rank users and analyze their contributions, and used the Pillow library to generate various pixel-based images. The web app, built with Typescript and Vite, serves data from CSV files, features a search function, and allows users to compare their stats to previous years.</p>",
+{
+  "websites": [
+    {
+    "projectTitle": "Days For Girls Inventory",
+    "datePublished": "December 18, 2025",
+    "skills": ["TypeScript", "Firebase", "Vite", "HTML", "CSS"],
+    "description": "A progressive web app built from scratch using TypeScript, Vite, and Firebase. This app was created as part of my Masters degree at Loyola University of Chicago for the Solon Ohio Days for Girls team to track their inventory and provide information on their current projects and events. The app uses Firebase for both user authentication and data storage.",
     "screenshots": [
       {
-        "linkText": "The homepage displaying the 2025 stats",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-home.png"
+        "linkText": "The homepage",
+        "linkURL": "https://raw.githubusercontent.com/ryan-montville/days-for-girls-solon/refs/heads/main/screenshots/home.png"
       },
       {
-        "linkText": "Displaying the Canvas 2025 final image",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-final-2025.png"
+        "linkText": "A view of the current inventory",
+        "linkURL": "https://raw.githubusercontent.com/ryan-montville/days-for-girls-solon/refs/heads/main/screenshots/current-inventory.png"
       },
       {
-        "linkText": "An image of all the red pixels placed on the canvas in 2025",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-red.png"
+        "linkText": "Donating items to the inventory",
+        "linkURL": "https://raw.githubusercontent.com/ryan-montville/days-for-girls-solon/refs/heads/main/screenshots/donate-items-modal.png"
       },
       {
-        "linkText": "An example of a user's stats",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-user.png"
-      },
-      {
-        "linkText": "An example of displaying the pixels placed by a user",
-        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-user-pixels.png"
+        "linkText": "A generated inventory report",
+        "linkURL": "https://raw.githubusercontent.com/ryan-montville/days-for-girls-solon/refs/heads/main/screenshots/inventory-report.png"
       }
     ],
     "links": [
       {
-        "linkText": "Go to Canvas Stats",
-        "linkURL": "https://canvasstats.com/",
-        "external": true
+        "linkText": "View Live Demo",
+        "linkURL": "https://ryan-montville.github.io/days-for-girls-solon/",
+        "external": false
       },
       {
         "linkText": "GitHub Repo",
-        "linkURL": "https://github.com/CanvasStats/main",
+        "linkURL": "https://github.com/ryan-montville/days-for-girls-solon",
         "external": true
       }
     ]
@@ -97,42 +85,57 @@
     ]
   },
   {
-    "projectTitle": "Days For Girls Inventory",
-    "datePublished": "December 18, 2025",
-    "skills": ["TypeScript", "Firebase", "Vite", "HTML", "CSS"],
-    "description": "A progressive web app built from scratch using TypeScript, Vite, and Firebase. This app was created as part of my Masters degree at Loyola University of Chicago for the Solon Ohio Days for Girls team to track their inventory and provide information on their current projects and events. The app uses Firebase for both user authentication and data storage.",
+    "projectTitle": "Canvas Stats",
+    "datePublished": "June 10, 2026",
+    "skills": [
+      "TypeScript",
+      "Vite",
+      "D3.js",
+      "Python",
+      "Python Pillow",
+      "PostgreSQL",
+      "HTML",
+      "CSS"
+    ],
+    "description": "<p>I created a web app to display statistics from <a href='https://canvas.fediverse.events'>canvas</a>. Users can view their individual statistics and overall event metrics, such as the most common colors and top pixel placement coordinates. I imported the SQL data into a PostgreSQL database, wrote functions with Psycopg2 to rank users and analyze their contributions, and used the Pillow library to generate various pixel-based images. The web app, built with Typescript and Vite, serves data from CSV files, features a search function, and allows users to compare their stats to previous years.</p>",
     "screenshots": [
       {
-        "linkText": "The homepage",
-        "linkURL": "https://raw.githubusercontent.com/ryan-montville/days-for-girls-solon/refs/heads/main/screenshots/home.png"
+        "linkText": "The homepage displaying the 2025 stats",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-home.png"
       },
       {
-        "linkText": "A view of the current inventory",
-        "linkURL": "https://raw.githubusercontent.com/ryan-montville/days-for-girls-solon/refs/heads/main/screenshots/current-inventory.png"
+        "linkText": "Displaying the Canvas 2025 final image",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-final-2025.png"
       },
       {
-        "linkText": "Donating items to the inventory",
-        "linkURL": "https://raw.githubusercontent.com/ryan-montville/days-for-girls-solon/refs/heads/main/screenshots/donate-items-modal.png"
+        "linkText": "An image of all the red pixels placed on the canvas in 2025",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-red.png"
       },
       {
-        "linkText": "A generated inventory report",
-        "linkURL": "https://raw.githubusercontent.com/ryan-montville/days-for-girls-solon/refs/heads/main/screenshots/inventory-report.png"
+        "linkText": "An example of a user's stats",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-user.png"
+      },
+      {
+        "linkText": "An example of displaying the pixels placed by a user",
+        "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/canvas-user-pixels.png"
       }
     ],
     "links": [
       {
-        "linkText": "View Live Demo",
-        "linkURL": "https://ryan-montville.github.io/days-for-girls-solon/",
-        "external": false
+        "linkText": "Go to Canvas Stats",
+        "linkURL": "https://canvasstats.com/",
+        "external": true
       },
       {
         "linkText": "GitHub Repo",
-        "linkURL": "https://github.com/ryan-montville/days-for-girls-solon",
+        "linkURL": "https://github.com/CanvasStats/main",
         "external": true
       }
     ]
-  },
-  {
+  }
+  ],
+  "other": [
+{
     "projectTitle": "Rubik's Mosaic Text Generator",
     "datePublished": "March 01, 2025",
     "skills": [
@@ -184,7 +187,7 @@
     "links": [
       {
         "linkText": "Read More and View Demos",
-        "linkURL": "/maze",
+        "linkURL": "/maze/index.html",
         "external": false
       },
       {
@@ -603,4 +606,6 @@
       }
     ]
   }
-]
+  ]
+  
+}

@@ -1,7 +1,6 @@
 import { initializeApp } from "./main.js";
 
 const loadingCard = document.getElementById('loading-card') as HTMLElement;
-const mainElem = document.querySelector('main') as HTMLElement;
 const infoCard = document.getElementById('info-card') as HTMLElement;
 const infoHeader = infoCard.querySelector('h2') as HTMLElement;
 const iframeContainer = document.getElementById('iframe-container') as HTMLElement

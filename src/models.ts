@@ -7,12 +7,10 @@ export interface Project {
     links: Link[];
 }
 
-export class Link {
-    constructor(
-        public linkText: string,
-        public linkURL: string,
-        public external?: boolean
-    ) { }
+export interface Link {
+    linkText: string;
+    linkURL: string;
+    external?: boolean;
 }
 
 export interface tag {
@@ -20,11 +18,9 @@ export interface tag {
     tagContent: string;
 }
 
-export class Image {
-    constructor(
-        public imageSource: string,
-        public imageClass: string
-    ) { }
+export interface Image {
+    imageSource: string;
+    imageClass: string;
 }
 
 export interface ContentCard {
@@ -34,18 +30,14 @@ export interface ContentCard {
     paragraphs: ParagraphBlock[];
 }
 
-export class ParagraphBlock {
-    constructor(
-        public parts: ContentPair[]
-    ) { }
+export interface ParagraphBlock {
+    parts: ContentPair[];
 }
 
-export class ContentPair {
-    constructor(
-        public contentKey: string,
-        public contentValue: string,
-        public tuppleValue?: string
-    ) { }
+export interface ContentPair {
+    contentKey: string;
+    contentValue: string;
+    tuppleValue?: string;
 }
 
 export type BlockContent = ParagraphBlock | Image | Link | ContentPair;

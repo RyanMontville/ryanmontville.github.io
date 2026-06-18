@@ -1,4 +1,6 @@
 import { g } from "./goto.js";
+import type { ContentPair } from "./models.js";
+import { makeElement } from "./modules/utils.js";
 
 const pageWrapper = document.getElementById('page-wrapper') as HTMLElement;
 
@@ -46,15 +48,63 @@ export async function fetchHTML(url: string) {
 
 export async function loadHeader(currentPage: string) {
     const headerPlaceholder = document.getElementById('header-placeholder') as HTMLElement;
-    try {
-        const headerData = await fetchHTML('../templates/header.html');
-        if (headerData) {
-            //Create the header element and set the header HTML
-            const header = document.createElement('header');
-            header.innerHTML = headerData;
-            pageWrapper.replaceChild(header, headerPlaceholder);
+    const header = document.createElement('header');
+    const links: ContentPair[] = [
+        {
+            contentKey: "Portfolio",
+            contentValue: "/"
+        },
+        {
+            contentKey: "About Me",
+            contentValue: "/about-me.html"
+        },
+        {
+            contentKey: "My Adventure Blog",
+            contentValue: "https://ryanmontville.com/disney/"
+        },
+        {
+            contentKey: "GitHub",
+            contentValue: "https://github.com/RyanMontville",
+            tuppleValue: "external"
+        },
+        {
+            contentKey: "LinkedIn",
+            contentValue: "https://www.linkedin.com/in/ryanmontville/",
+            tuppleValue: "external"
+        },
+        {
+            contentKey: "Instagram",
+            contentValue: "https://www.instagram.com/ryanmontville/",
+            tuppleValue: "external"
         }
-    } catch (error: any) {
-        console.error(`Failed to load the header: ${error}`);
-    }
+    ];
+    const nav = links.reduce((acc: HTMLElement, link: ContentPair) => {
+        const a = makeElement("a", null, null, link.contentKey) as HTMLAnchorElement;
+        a.href = link.contentValue;
+        if (link.tuppleValue) {
+            a.target = "_blank";
+            a.setAttribute('rel', 'noopener noreferrer');
+        }
+        if (currentPage === link.contentKey) a.style.fontWeight = "bold";
+        acc.appendChild(a);
+        return acc;
+
+    }, makeElement("nav", null, null, null));
+    const headerImg = makeElement("img", null, null, null);
+    headerImg.setAttribute("src", "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/main/images/main.png");
+    const headerH1 = makeElement("h1", null, null, "Ryan Montville");
+    header.append(nav, headerImg, headerH1);
+    pageWrapper.replaceChild(header, headerPlaceholder);
+
+    // try {
+    //     const headerData = await fetchHTML('../templates/header.html');
+    //     if (headerData) {
+    //         //Create the header element and set the header HTML
+    //         const header = document.createElement('header');
+    //         header.innerHTML = headerData;
+    //         pageWrapper.replaceChild(header, headerPlaceholder);
+    //     }
+    // } catch (error: any) {
+    //     console.error(`Failed to load the header: ${error}`);
+    // }
 }
