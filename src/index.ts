@@ -244,4 +244,5 @@ initializeApp("Portfolio").then(async () => {
     displayProjects();
     setSkillSelected("all");
     loadingCard.classList.add('hide');
+    projectsElement.classList.remove("hide");
 });
