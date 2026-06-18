@@ -9,7 +9,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, "about-me.html"),
-        maze: resolve(__dirname, "maze/index.html")
+        maze: resolve(__dirname, "maze/index.html"),
+        demo: resolve(__dirname, "maze/demo.html")
       },
     },
   },

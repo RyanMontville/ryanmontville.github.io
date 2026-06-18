@@ -1,9 +1,27 @@
 {
   "websites": [
     {
+      "projectTitle": "GuatemaltaUSA.org",
+      "datePublished": "May 01, 2026",
+      "skills": ["HTML", "CSS", "TypeScript", "Firebase", "Vite", "Quill"],
+      "description": "Website created for Guatemalta USA to manage live fundraising stats, media updates, and donor engagement.",
+      "links": [
+        {
+          "linkText": "Go to GuatemaltaUSA.org",
+          "linkURL": "https://guatemaltausa.org/",
+          "external": true
+        },
+        {
+          "linkText": "GitHub Repo",
+          "linkURL": "https://github.com/Guatemalta-USA/GuatemaltaUSA",
+          "external": true
+        }
+      ]
+    },
+    {
     "projectTitle": "Days For Girls Inventory",
     "datePublished": "December 18, 2025",
-    "skills": ["TypeScript", "Firebase", "Vite", "HTML", "CSS"],
+    "skills": ["HTML", "CSS", "TypeScript", "Firebase", "Vite", "Quill"],
     "description": "A progressive web app built from scratch using TypeScript, Vite, and Firebase. This app was created as part of my Masters degree at Loyola University of Chicago for the Solon Ohio Days for Girls team to track their inventory and provide information on their current projects and events. The app uses Firebase for both user authentication and data storage.",
     "screenshots": [
       {
