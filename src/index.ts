@@ -160,7 +160,7 @@ function displayProjects() {
         description.innerHTML = currProject.description;
         newProject.appendChild(description);
 
-        if (currProject.screenshots.length !== 0) {
+        if (currProject.screenshots && currProject.screenshots.length !== 0) {
             const screenshotCarousel = createImageCarousel(currProject.screenshots);
             newProject.appendChild(screenshotCarousel);
         }
