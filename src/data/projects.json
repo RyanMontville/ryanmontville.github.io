@@ -5,7 +5,12 @@
       "datePublished": "May 01, 2026",
       "skills": ["HTML", "CSS", "TypeScript", "Firebase", "Vite", "Quill"],
       "description": "Website created for Guatemalta USA to manage live fundraising stats, media updates, and donor engagement.",
-      "screenshots": [],
+      "screenshots": [
+        {
+          "linkText": "The homepage",
+          "linkURL": "https://raw.githubusercontent.com/RyanMontville/ryanmontville.github.io/refs/heads/main/images/GuatemaltaUSA-home.png"
+        }
+      ],
       "links": [
         {
           "linkText": "Go to GuatemaltaUSA.org",
