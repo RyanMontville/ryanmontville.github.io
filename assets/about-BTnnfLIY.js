@@ -1,0 +1,1 @@
+import{t as e}from"./main-Dwv8FXbU.js";var t=document.getElementById(`loading-card`),n=document.getElementById(`about`);e(`About Me`).then(()=>{t.classList.add(`hide`),n.classList.remove(`hide`)});
