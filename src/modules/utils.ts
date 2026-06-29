@@ -45,6 +45,7 @@ export function getSkillImage(skill: string): string {
     case 'Firebase': { return "https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black" }
     case 'Vite': { return "https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white" }
     case "Quill": { return "https://img.shields.io/badge/Quill-52B0E7?style=for-the-badge&logo=apache&logoColor=white"}
+    case "D3.js": { return "https://img.shields.io/badge/D3.JS-%23000000?style=for-the-badge&logo=D3&logoColor=#ff823e"}
     default: { return ""; break; }
   }
 }
